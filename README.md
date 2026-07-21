@@ -1,45 +1,39 @@
 ## Hello — I'm Prakash
 
-**Microsoft Certified Trainer** | Azure & Cloud Architect | Building in public at [santhiprakash.com](https://santhiprakash.com)  
-Andhra Pradesh, India · [LinkedIn](https://linkedin.com/in/santhiprakash) · [Email](mailto:connect@santhiprakash.com)
+**Microsoft Certified Trainer** | Azure & Cloud Architect | Building in public at [santhiprakash.com](https://santhiprakash.com)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/santhiprakash)
+[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:connect@santhiprakash.com)
+![Location](https://img.shields.io/badge/Location-Andhra%20Pradesh%2C%20India-2E8B57?style=for-the-badge)
 
 ---
 
-### What I Do
+### About Me
 
 I train IT professionals in cloud (Azure), teach AI-assisted development with Claude, and build web apps with Next.js, TypeScript, and Postgres. I'm also a certified Mutual Fund Distributor and teach affiliate marketing and financial planning basics.
 
-The core philosophy: **you learn cloud by breaking things in a live environment.** All my sessions are demo-driven, not slide-driven. I share working code, not abstractions.
-
----
-
-### Current Focus
-
-- **Azure & Cloud Architecture** — 20+ years in IT; independent Azure/cloud consulting
-- **AI-Assisted Development** — Claude workflows, prompt engineering, building with LLMs
-- **Next.js + Full-Stack Apps** — shipping with TypeScript, Postgres (Neon, Supabase), TailwindCSS
-- **Teaching & Content** — building [santhiprakash.com](https://santhiprakash.com) as an AI & cloud course platform
+> **The core philosophy:** you learn cloud by breaking things in a live environment. All my sessions are demo-driven, not slide-driven — I share working code, not abstractions.
 
 ---
 
 ### Stack & Tools
 
-**Cloud & Infrastructure:** Azure (VMs, App Service, SQL Database, CosmosDB, Functions), AWS basics, Docker, Kubernetes
-
-**Development:** Next.js, React, TypeScript, JavaScript, Node.js, TailwindCSS, Shadcn/Radix, Postgres
-
-**Data & Databases:** PostgreSQL, Supabase, Neon, Azure SQL
-
-**Other:** Git, GitHub, Linux, Bash, email infrastructure (SPF/DKIM/DMARC)
+| Cloud & Infra | Development | Data & Teaching |
+|---|---|---|
+| ![Azure](https://img.shields.io/badge/Azure-0089D6?style=flat&logo=microsoftazure&logoColor=white) | ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white) | ![Postgres](https://img.shields.io/badge/Postgres-4169E1?style=flat&logo=postgresql&logoColor=white) |
+| ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white) | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white) | ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat&logo=supabase&logoColor=white) |
+| ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black) | ![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat&logo=tailwindcss&logoColor=white) | ![Claude](https://img.shields.io/badge/Claude-D97757?style=flat&logo=anthropic&logoColor=white) |
+| ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) | ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black) | ![Neon](https://img.shields.io/badge/Neon-Postgres-00E599?style=flat) |
 
 ---
 
-### Recent & Ongoing Work
+### What I Do
 
-- Building courses on Claude AI, Azure cloud, and full-stack app development
-- Consulting on Azure infrastructure and cloud strategy
-- Shipping small, live, and in public — every demo is proof
-- Writing about affiliate marketing and building a second income sustainably (not guru math — real numbers, real timelines)
+| Consulting & Cloud | Teaching & Content |
+|---|---|
+| Independent Azure/cloud architecture consulting — 20+ years in IT | Building [santhiprakash.com](https://santhiprakash.com) — AI & cloud courses, demo-driven |
+| AI-assisted development workflows with Claude | Affiliate marketing — the tough parts included, not guru math |
+| Full-stack apps: Next.js, TypeScript, Postgres (Neon, Supabase) | Financial planning basics (certified Mutual Fund Distributor) |
 
 ---
 
@@ -51,6 +45,6 @@ I use this space to share working code, course materials, demos, and experiments
 
 ### Get in Touch
 
-Looking for Azure consulting, cloud architecture help, or training in AI-assisted development? Reach out: [connect@santhiprakash.com](mailto:connect@santhiprakash.com)
+Looking for Azure consulting, cloud architecture help, or training in AI-assisted development? [connect@santhiprakash.com](mailto:connect@santhiprakash.com)
 
 Teaching is how I learn best. If you're stuck on a problem, ship a link to what you're building — the conversation is often worth more than the answer.
