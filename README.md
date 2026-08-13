@@ -2,7 +2,10 @@
 
 **Microsoft Certified Trainer** | Azure & Cloud Architect | Building in public at [santhiprakash.com](https://santhiprakash.com)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/santhiprakash)
+[![Website](https://img.shields.io/badge/santhiprakash.com-Visit-2E8B57?style=for-the-badge&logo=googlechrome&logoColor=white)](https://santhiprakash.com)
+[![YouTube](https://img.shields.io/badge/YouTube-Subscribe-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@santhiprakashb)
+[![Instagram](https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/santhiprakashb)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/santhiprakashb)
 [![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:connect@santhiprakash.com)
 ![Location](https://img.shields.io/badge/Location-Andhra%20Pradesh%2C%20India-2E8B57?style=for-the-badge)
 
@@ -34,6 +37,18 @@ I train IT professionals in cloud (Azure), teach AI-assisted development with Cl
 | Independent Azure/cloud architecture consulting — 20+ years in IT | Building [santhiprakash.com](https://santhiprakash.com) — AI & cloud courses, demo-driven |
 | AI-assisted development workflows with Claude | Affiliate marketing — the tough parts included, not guru math |
 | Full-stack apps: Next.js, TypeScript, Postgres (Neon, Supabase) | Financial planning basics (certified Mutual Fund Distributor) |
+
+---
+
+### Open Source Contributions
+
+72 merged PRs across 14 public open-source projects — most in [Remotion](https://github.com/remotion-dev/remotion) (video-rendering in React, the engine behind my video pipeline) and [HyperFrames](https://github.com/heygen-com/hyperframes) (HTML-to-video for agents).
+
+| Project | Merged PRs | What it is |
+|---|---|---|
+| [remotion-dev/remotion](https://github.com/remotion-dev/remotion) | 26 | Make videos programmatically with React |
+| [oblien/openship](https://github.com/oblien/openship) | 10 | Self-hosted deployment platform |
+| [marketcalls/openalgo](https://github.com/marketcalls/openalgo) | 5 | Open source algo trading platform |
 
 ---
 
