@@ -1,13 +1,19 @@
+<div align="center">
+
 ## Hello — I'm Prakash
 
-**Microsoft Certified Trainer** | Azure & Cloud Architect | Building in public at [santhiprakash.com](https://santhiprakash.com)
+**Microsoft Certified Trainer** &nbsp;·&nbsp; Azure & Cloud Architect &nbsp;·&nbsp; Building in public at [santhiprakash.com](https://santhiprakash.com)
 
 [![Website](https://img.shields.io/badge/santhiprakash.com-Visit-2E8B57?style=for-the-badge&logo=googlechrome&logoColor=white)](https://santhiprakash.com)
+[![Cursor](https://img.shields.io/badge/Cursor-Profile-000000?style=for-the-badge&logo=cursor&logoColor=white)](https://cursor.com/@santhiprakashb)
 [![YouTube](https://img.shields.io/badge/YouTube-Subscribe-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@santhiprakashb)
 [![Instagram](https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/santhiprakashb)
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/santhiprakashb)
 [![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:connect@santhiprakash.com)
 ![Location](https://img.shields.io/badge/Location-Andhra%20Pradesh%2C%20India-2E8B57?style=for-the-badge)
+
+</div>
 
 ---
 
@@ -22,11 +28,12 @@ I train IT professionals in cloud (Azure), teach AI-assisted development with Cl
 ### Stack & Tools
 
 | Cloud & Infra | Development | Data & Teaching |
-|---|---|---|
+|:---:|:---:|:---:|
 | ![Azure](https://img.shields.io/badge/Azure-0089D6?style=flat&logo=microsoftazure&logoColor=white) | ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white) | ![Postgres](https://img.shields.io/badge/Postgres-4169E1?style=flat&logo=postgresql&logoColor=white) |
 | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white) | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white) | ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat&logo=supabase&logoColor=white) |
 | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black) | ![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat&logo=tailwindcss&logoColor=white) | ![Claude](https://img.shields.io/badge/Claude-D97757?style=flat&logo=anthropic&logoColor=white) |
 | ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) | ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black) | ![Neon](https://img.shields.io/badge/Neon-Postgres-00E599?style=flat) |
+| ![Cursor](https://img.shields.io/badge/Cursor-000000?style=flat&logo=cursor&logoColor=white) | ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white) | ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white) |
 
 ---
 
@@ -40,15 +47,50 @@ I train IT professionals in cloud (Azure), teach AI-assisted development with Cl
 
 ---
 
+### Open Source Projects I Maintain
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**[Shopmatic](https://github.com/santhiprakash/shopmatic)**
+[![Stars](https://img.shields.io/github/stars/santhiprakash/shopmatic?style=flat-square&color=2E8B57)](https://github.com/santhiprakash/shopmatic/stargazers)
+[![License](https://img.shields.io/github/license/santhiprakash/shopmatic?style=flat-square&color=2E8B57)](https://github.com/santhiprakash/shopmatic/blob/main/LICENSE)
+
+SaaS platform for influencers and affiliate marketers to showcase product recommendations, with AI-powered product extraction from any e-commerce URL.
+
+`React` `TypeScript` `Vite` `Neon` `OpenAI`
+
+</td>
+<td width="50%" valign="top">
+
+**[FreshLane](https://github.com/santhiprakash/freshlane)**
+[![Stars](https://img.shields.io/github/stars/santhiprakash/freshlane?style=flat-square&color=2E8B57)](https://github.com/santhiprakash/freshlane/stargazers)
+[![License](https://img.shields.io/github/license/santhiprakash/freshlane?style=flat-square&color=2E8B57)](https://github.com/santhiprakash/freshlane/blob/main/LICENSE)
+
+Open-source digital storefront for a local neighborhood supermarket — browse, order, click & collect or home delivery.
+
+`Next.js` `TypeScript` `Tailwind CSS`
+
+</td>
+</tr>
+</table>
+
+---
+
 ### Open Source Contributions
 
 72 merged PRs across 14 public open-source projects — most in [Remotion](https://github.com/remotion-dev/remotion) (video-rendering in React, the engine behind my video pipeline) and [HyperFrames](https://github.com/heygen-com/hyperframes) (HTML-to-video for agents).
 
-| Project | Merged PRs | What it is |
-|---|---|---|
-| [remotion-dev/remotion](https://github.com/remotion-dev/remotion) | 26 | Make videos programmatically with React |
-| [oblien/openship](https://github.com/oblien/openship) | 10 | Self-hosted deployment platform |
-| [marketcalls/openalgo](https://github.com/marketcalls/openalgo) | 5 | Open source algo trading platform |
+<div align="center">
+
+| Project | Merged PRs | Stars | What it is |
+|:---|:---:|:---:|:---|
+| **[remotion-dev/remotion](https://github.com/remotion-dev/remotion)** | 🟢 **26** | ![Stars](https://img.shields.io/github/stars/remotion-dev/remotion?style=flat-square&label=&color=2E8B57) | Make videos programmatically with React |
+| **[oblien/openship](https://github.com/oblien/openship)** | 🟢 **10** | ![Stars](https://img.shields.io/github/stars/oblien/openship?style=flat-square&label=&color=2E8B57) | Self-hosted deployment platform |
+| **[marketcalls/openalgo](https://github.com/marketcalls/openalgo)** | 🟢 **5** | ![Stars](https://img.shields.io/github/stars/marketcalls/openalgo?style=flat-square&label=&color=2E8B57) | Open source algo trading platform |
+
+</div>
 
 ---
 
