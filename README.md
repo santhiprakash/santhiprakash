@@ -78,19 +78,23 @@ Open-source digital storefront for a local neighborhood supermarket — browse, 
 
 ---
 
+<!-- OSS-STATS:START -->
 ### Open Source Contributions
 
-72 merged PRs across 14 public open-source projects — most in [Remotion](https://github.com/remotion-dev/remotion) (video-rendering in React, the engine behind my video pipeline) and [HyperFrames](https://github.com/heygen-com/hyperframes) (HTML-to-video for agents).
+**81** merged PRs across **16** public open-source projects — 🔥 **21** merged in the last 7 days.
 
 <div align="center">
 
 | Project | Merged PRs | Stars | What it is |
 |:---|:---:|:---:|:---|
-| **[remotion-dev/remotion](https://github.com/remotion-dev/remotion)** | 🟢 **26** | ![Stars](https://img.shields.io/github/stars/remotion-dev/remotion?style=flat-square&label=&color=2E8B57) | Make videos programmatically with React |
-| **[oblien/openship](https://github.com/oblien/openship)** | 🟢 **10** | ![Stars](https://img.shields.io/github/stars/oblien/openship?style=flat-square&label=&color=2E8B57) | Self-hosted deployment platform |
-| **[marketcalls/openalgo](https://github.com/marketcalls/openalgo)** | 🟢 **5** | ![Stars](https://img.shields.io/github/stars/marketcalls/openalgo?style=flat-square&label=&color=2E8B57) | Open source algo trading platform |
+| **[openclaw/openclaw](https://github.com/openclaw/openclaw)** | 🟢 **5** | ![Stars](https://img.shields.io/github/stars/openclaw/openclaw?style=flat-square&label=&color=2E8B57) | Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 |
+| **[vitejs/vite](https://github.com/vitejs/vite)** | 🟢 **3** | ![Stars](https://img.shields.io/github/stars/vitejs/vite?style=flat-square&label=&color=2E8B57) | Next generation frontend tooling. It's fast! |
+| **[remotion-dev/remotion](https://github.com/remotion-dev/remotion)** | 🟢 **26** | ![Stars](https://img.shields.io/github/stars/remotion-dev/remotion?style=flat-square&label=&color=2E8B57) | 🎥 Make videos programmatically with React |
 
 </div>
+
+<sub>Auto-updated daily from live GitHub data — see [`scripts/update-oss-stats.mjs`](scripts/update-oss-stats.mjs).</sub>
+<!-- OSS-STATS:END -->
 
 ---
 

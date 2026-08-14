@@ -1,0 +1,36 @@
+name: Update OSS stats
+
+on:
+  schedule:
+    - cron: "17 3 * * *" # daily, ~08:47 IST
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Regenerate Open Source Contributions section
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/update-oss-stats.mjs
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet README.md; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: auto-update open source contribution stats"
+          git push
