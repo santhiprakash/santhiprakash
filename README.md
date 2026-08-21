@@ -81,7 +81,7 @@ Open-source digital storefront for a local neighborhood supermarket — browse, 
 <!-- OSS-STATS:START -->
 ### Open Source Contributions
 
-**83** merged PRs across **16** public open-source projects — 🔥 **16** merged in the last 7 days.
+**84** merged PRs across **16** public open-source projects — 🔥 **3** merged in the last 7 days.
 
 <div align="center">
 
