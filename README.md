@@ -81,13 +81,13 @@ Open-source digital storefront for a local neighborhood supermarket — browse, 
 <!-- OSS-STATS:START -->
 ### Open Source Contributions
 
-**114** merged PRs across **18** public open-source projects — 🔥 **10** merged in the last 7 days.
+**117** merged PRs across **18** public open-source projects — 🔥 **11** merged in the last 7 days.
 
 <div align="center">
 
 | Project | Merged PRs | Stars | What it is |
 |:---|:---:|:---:|:---|
-| **[openclaw/openclaw](https://github.com/openclaw/openclaw)** | 🟢 **9** | ![Stars](https://img.shields.io/github/stars/openclaw/openclaw?style=flat-square&label=&color=2E8B57) | Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 |
+| **[openclaw/openclaw](https://github.com/openclaw/openclaw)** | 🟢 **9** | ![Stars](https://img.shields.io/github/stars/openclaw/openclaw?style=flat-square&label=&color=2E8B57) | The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 |
 | **[vitejs/vite](https://github.com/vitejs/vite)** | 🟢 **3** | ![Stars](https://img.shields.io/github/stars/vitejs/vite?style=flat-square&label=&color=2E8B57) | Next generation frontend tooling. It's fast! |
 | **[remotion-dev/remotion](https://github.com/remotion-dev/remotion)** | 🟢 **26** | ![Stars](https://img.shields.io/github/stars/remotion-dev/remotion?style=flat-square&label=&color=2E8B57) | 🎥 Make videos programmatically with React |
 
