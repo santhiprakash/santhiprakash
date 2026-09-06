@@ -1,111 +1,72 @@
 <div align="center">
 
-## Hello — I'm Prakash
+# Santhi Prakash
 
-**Microsoft Certified Trainer** &nbsp;·&nbsp; Azure & Cloud Architect &nbsp;·&nbsp; Building in public at [santhiprakash.com](https://santhiprakash.com)
+### I build AI systems that survive contact with production.
 
-[![Website](https://img.shields.io/badge/santhiprakash.com-Visit-2E8B57?style=for-the-badge&logo=googlechrome&logoColor=white)](https://santhiprakash.com)
-[![Cursor](https://img.shields.io/badge/Cursor-Profile-000000?style=for-the-badge&logo=cursor&logoColor=white)](https://cursor.com/@santhiprakashb)
-[![YouTube](https://img.shields.io/badge/YouTube-Subscribe-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@santhiprakashb)
-[![Instagram](https://img.shields.io/badge/Instagram-Follow-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/santhiprakashb)
+AI systems builder · Azure architect · open-source contributor · educator
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/santhiprakashb)
-[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:connect@santhiprakash.com)
-![Location](https://img.shields.io/badge/Location-Andhra%20Pradesh%2C%20India-2E8B57?style=for-the-badge)
+[Website](https://santhiprakash.com) · [LinkedIn](https://linkedin.com/in/santhiprakashb) · [YouTube](https://www.youtube.com/@santhiprakashb) · [Email](mailto:connect@santhiprakash.com)
 
 </div>
 
 ---
 
-### About Me
+I build practical agent workflows, developer tools, and resilient web systems
+with TypeScript, Python, Azure, Postgres, and LLMs. I also teach cloud and
+AI-assisted development through live, build-first sessions.
 
-I train IT professionals in cloud (Azure), teach AI-assisted development with Claude, and build web apps with Next.js, TypeScript, and Postgres. I'm also a certified Mutual Fund Distributor and teach affiliate marketing and financial planning basics.
+```text
+OBSERVE → REPRODUCE → ISOLATE → TEST → CONTRIBUTE → MAINTAIN
+```
 
-> **The core philosophy:** you learn cloud by breaking things in a live environment. All my sessions are demo-driven, not slide-driven — I share working code, not abstractions.
+## Selected systems
 
----
+### [Shopmatic](https://github.com/santhiprakash/shopmatic) · [Live](https://shopmatic.cc)
 
-### Stack & Tools
+An open-source storefront platform for creators and affiliate marketers, with
+AI-assisted product extraction and a TypeScript/Vite/Postgres stack.
 
-| Cloud & Infra | Development | Data & Teaching |
-|:---:|:---:|:---:|
-| ![Azure](https://img.shields.io/badge/Azure-0089D6?style=flat&logo=microsoftazure&logoColor=white) | ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white) | ![Postgres](https://img.shields.io/badge/Postgres-4169E1?style=flat&logo=postgresql&logoColor=white) |
-| ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white) | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white) | ![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat&logo=supabase&logoColor=white) |
-| ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black) | ![TailwindCSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat&logo=tailwindcss&logoColor=white) | ![Claude](https://img.shields.io/badge/Claude-D97757?style=flat&logo=anthropic&logoColor=white) |
-| ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) | ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black) | ![Neon](https://img.shields.io/badge/Neon-Postgres-00E599?style=flat) |
-| ![Cursor](https://img.shields.io/badge/Cursor-000000?style=flat&logo=cursor&logoColor=white) | ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white) | ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white) |
+### [FreshLane](https://github.com/santhiprakash/freshlane)
 
----
+A neighborhood supermarket storefront built with Next.js and TypeScript for
+browsing, ordering, click-and-collect, and local delivery.
 
-### What I Do
+### [RestroMenu](https://github.com/santhiprakash/restromenu)
 
-| Consulting & Cloud | Teaching & Content |
-|---|---|
-| Independent Azure/cloud architecture consulting — 20+ years in IT | Building [santhiprakash.com](https://santhiprakash.com) — AI & cloud courses, demo-driven |
-| AI-assisted development workflows with Claude | Affiliate marketing — the tough parts included, not guru math |
-| Full-stack apps: Next.js, TypeScript, Postgres (Neon, Supabase) | Financial planning basics (certified Mutual Fund Distributor) |
+Open-source restaurant menu cards with PDF and PNG export, built as a practical
+small-business tool rather than a demo-only interface.
 
----
+## Selected upstream work
 
-### Open Source Projects I Maintain
+- [Reactive Resume #3387](https://github.com/amruthpillai/reactive-resume/pull/3387) — repaired form-control label and accessibility contracts, with regression coverage.
+- [Beszel #2269](https://github.com/henrygd/beszel/pull/2269) — corrected GPU chart layout behavior and iterated on maintainer feedback through merge.
+- [Prometheus docs #3079](https://github.com/prometheus/docs/pull/3079) — fixed CI link validation while keeping the final change narrowly scoped.
+- [HyperFrames #3387](https://github.com/heygen-com/hyperframes/pull/3387) — improved missing-manifest diagnostics across producer and CLI paths.
+- [OpenShip #685](https://github.com/oblien/openship/pull/685) — added engine compatibility metadata for catalog entries using newer runtime features.
 
-<table>
-<tr>
-<td width="50%" valign="top">
+## The lab behind the work
 
-**[Shopmatic](https://github.com/santhiprakash/shopmatic)**
-[![Stars](https://img.shields.io/github/stars/santhiprakash/shopmatic?style=flat-square&color=2E8B57)](https://github.com/santhiprakash/shopmatic/stargazers)
-[![License](https://img.shields.io/github/license/santhiprakash/shopmatic?style=flat-square&color=2E8B57)](https://github.com/santhiprakash/shopmatic/blob/main/LICENSE)
+I run a supervised AI engineering lab using Paperclip on a Mumbai server. The
+system helps with research, reproduction, testing, and review monitoring. I own
+what gets selected, what gets submitted, the final verification, and every
+maintainer conversation.
 
-SaaS platform for influencers and affiliate marketers to showcase product recommendations, with AI-powered product extraction from any e-commerce URL.
+The operating rule is simple: a green test is evidence, not permission. A
+contribution should also fit the project's policy, solve the reporter's real
+path, and be worth a maintainer's attention.
 
-`React` `TypeScript` `Vite` `Neon` `OpenAI`
+## Current focus
 
-</td>
-<td width="50%" valign="top">
+- Reliable AI-agent workflows with explicit human ownership
+- Developer tooling and integration correctness
+- Azure and production-minded cloud architecture
+- Practical AI education through working systems
 
-**[FreshLane](https://github.com/santhiprakash/freshlane)**
-[![Stars](https://img.shields.io/github/stars/santhiprakash/freshlane?style=flat-square&color=2E8B57)](https://github.com/santhiprakash/freshlane/stargazers)
-[![License](https://img.shields.io/github/license/santhiprakash/freshlane?style=flat-square&color=2E8B57)](https://github.com/santhiprakash/freshlane/blob/main/LICENSE)
+## Work with me
 
-Open-source digital storefront for a local neighborhood supermarket — browse, order, click & collect or home delivery.
+I help teams design cloud systems, adopt AI-assisted engineering responsibly,
+and turn technical knowledge into hands-on learning.
 
-`Next.js` `TypeScript` `Tailwind CSS`
-
-</td>
-</tr>
-</table>
-
----
-
-<!-- OSS-STATS:START -->
-### Open Source Contributions
-
-**122** merged PRs across **18** public open-source projects — 🔥 **12** merged in the last 7 days.
-
-<div align="center">
-
-| Project | Merged PRs | Stars | What it is |
-|:---|:---:|:---:|:---|
-| **[openclaw/openclaw](https://github.com/openclaw/openclaw)** | 🟢 **9** | ![Stars](https://img.shields.io/github/stars/openclaw/openclaw?style=flat-square&label=&color=2E8B57) | The AI that really does things. Any OS. Any Platform. The lobster way. 🦞 |
-| **[vitejs/vite](https://github.com/vitejs/vite)** | 🟢 **3** | ![Stars](https://img.shields.io/github/stars/vitejs/vite?style=flat-square&label=&color=2E8B57) | Next generation frontend tooling. It's fast! |
-| **[remotion-dev/remotion](https://github.com/remotion-dev/remotion)** | 🟢 **26** | ![Stars](https://img.shields.io/github/stars/remotion-dev/remotion?style=flat-square&label=&color=2E8B57) | 🎥 Make videos programmatically with React |
-
-</div>
-
-<sub>Auto-updated daily from live GitHub data — see [`scripts/update-oss-stats.mjs`](scripts/update-oss-stats.mjs).</sub>
-<!-- OSS-STATS:END -->
-
----
-
-### Why GitHub
-
-I use this space to share working code, course materials, demos, and experiments. Not a portfolio — a public record of what I actually build. If you want to see how something works, clone it, break it, and learn from the error messages.
-
----
-
-### Get in Touch
-
-Looking for Azure consulting, cloud architecture help, or training in AI-assisted development? [connect@santhiprakash.com](mailto:connect@santhiprakash.com)
-
-Teaching is how I learn best. If you're stuck on a problem, ship a link to what you're building — the conversation is often worth more than the answer.
+[Start at santhiprakash.com](https://santhiprakash.com) or email
+[connect@santhiprakash.com](mailto:connect@santhiprakash.com).
