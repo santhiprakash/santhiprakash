@@ -10,60 +10,59 @@
 </div>
 
 I build AI workflows, developer tools, and resilient cloud systems that survive
-contact with production. My stack is usually TypeScript, Python, Azure,
-Postgres, and LLMs—and I teach the lessons through practical, build-first
-sessions.
+contact with production — TypeScript, Python, Azure, Postgres, and LLMs. I teach
+the lessons in practical, build-first sessions.
+
+<div align="center">
+
+![Agent workflows](https://img.shields.io/badge/agent_workflows-0b1f35?style=flat-square)
+![Developer tooling](https://img.shields.io/badge/developer_tooling-0b1f35?style=flat-square)
+![Azure architecture](https://img.shields.io/badge/Azure_architecture-0b1f35?style=flat-square)
+![Practical AI education](https://img.shields.io/badge/practical_AI_education-0b1f35?style=flat-square)
+
+</div>
+
+---
 
 ## Open-source footprint
 
-Selected by a combination of project reach and accepted work. Counts cover all
-PRs submitted from this account and are a snapshot from **6 September 2026**.
+Chosen for project reach and merge rate — the share of my submitted PRs that
+maintainers actually merged. Snapshot: **6 September 2026**.
 
-| Project | What it builds | Contributions |
+| Project | What it builds | Merged / submitted |
 |:--|:--|:--:|
-| [**Remotion**](https://github.com/remotion-dev/remotion) | Programmatic video with React | [![51 PRs](https://img.shields.io/badge/PRs-51-3867d6?style=flat-square)](https://github.com/remotion-dev/remotion/pulls?q=is%3Apr+author%3Asanthiprakash) [![26 merged](https://img.shields.io/badge/merged-26-2ea44f?style=flat-square)](https://github.com/remotion-dev/remotion/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) |
-| [**OpenClaw**](https://github.com/openclaw/openclaw) | Cross-platform personal AI | [![35 PRs](https://img.shields.io/badge/PRs-35-3867d6?style=flat-square)](https://github.com/openclaw/openclaw/pulls?q=is%3Apr+author%3Asanthiprakash) [![9 merged](https://img.shields.io/badge/merged-9-2ea44f?style=flat-square)](https://github.com/openclaw/openclaw/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) |
-| [**OpenShip**](https://github.com/oblien/openship) | Self-hosted deployment platform | [![33 PRs](https://img.shields.io/badge/PRs-33-3867d6?style=flat-square)](https://github.com/oblien/openship/pulls?q=is%3Apr+author%3Asanthiprakash) [![13 merged](https://img.shields.io/badge/merged-13-2ea44f?style=flat-square)](https://github.com/oblien/openship/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) |
-| [**Prettier**](https://github.com/prettier/prettier) | Opinionated code formatting | [![28 PRs](https://img.shields.io/badge/PRs-28-3867d6?style=flat-square)](https://github.com/prettier/prettier/pulls?q=is%3Apr+author%3Asanthiprakash) [![7 merged](https://img.shields.io/badge/merged-7-2ea44f?style=flat-square)](https://github.com/prettier/prettier/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) |
-| [**OpenMausBot**](https://github.com/milind-soni/OpenMausBot) | Open-source agentic bot | [![18 PRs](https://img.shields.io/badge/PRs-18-3867d6?style=flat-square)](https://github.com/milind-soni/OpenMausBot/pulls?q=is%3Apr+author%3Asanthiprakash) [![17 merged](https://img.shields.io/badge/merged-17-2ea44f?style=flat-square)](https://github.com/milind-soni/OpenMausBot/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) |
-| [**Reactive Resume**](https://github.com/amruthpillai/reactive-resume) | Privacy-first resume builder | [![17 PRs](https://img.shields.io/badge/PRs-17-3867d6?style=flat-square)](https://github.com/amruthpillai/reactive-resume/pulls?q=is%3Apr+author%3Asanthiprakash) [![16 merged](https://img.shields.io/badge/merged-16-2ea44f?style=flat-square)](https://github.com/amruthpillai/reactive-resume/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) |
-| [**HyperFrames**](https://github.com/heygen-com/hyperframes) | HTML-to-video tooling for agents | [![14 PRs](https://img.shields.io/badge/PRs-14-3867d6?style=flat-square)](https://github.com/heygen-com/hyperframes/pulls?q=is%3Apr+author%3Asanthiprakash) [![8 merged](https://img.shields.io/badge/merged-8-2ea44f?style=flat-square)](https://github.com/heygen-com/hyperframes/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) |
+| [**Remotion**](https://github.com/remotion-dev/remotion) | Programmatic video with React | [![26 of 51 merged](https://img.shields.io/badge/26_%2F_51-2ea44f?style=flat-square)](https://github.com/remotion-dev/remotion/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) |
+| [**Reactive Resume**](https://github.com/amruthpillai/reactive-resume) | Privacy-first resume builder | [![16 of 17 merged](https://img.shields.io/badge/16_%2F_17-2ea44f?style=flat-square)](https://github.com/amruthpillai/reactive-resume/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) |
+| [**OpenMausBot**](https://github.com/milind-soni/OpenMausBot) | Open-source agentic bot | [![17 of 18 merged](https://img.shields.io/badge/17_%2F_18-2ea44f?style=flat-square)](https://github.com/milind-soni/OpenMausBot/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) |
+| [**OpenShip**](https://github.com/oblien/openship) | Self-hosted deployment platform | [![13 of 33 merged](https://img.shields.io/badge/13_%2F_33-2ea44f?style=flat-square)](https://github.com/oblien/openship/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) |
+| [**HyperFrames**](https://github.com/heygen-com/hyperframes) | HTML-to-video tooling for agents | [![8 of 14 merged](https://img.shields.io/badge/8_%2F_14-2ea44f?style=flat-square)](https://github.com/heygen-com/hyperframes/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) |
+| [**OpenClaw**](https://github.com/openclaw/openclaw) | Cross-platform personal AI | [![9 of 35 merged](https://img.shields.io/badge/9_%2F_35-2ea44f?style=flat-square)](https://github.com/openclaw/openclaw/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) |
+| [**Prettier**](https://github.com/prettier/prettier) | Opinionated code formatting | [![7 of 28 merged](https://img.shields.io/badge/7_%2F_28-2ea44f?style=flat-square)](https://github.com/prettier/prettier/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) |
 
-<sub>“Merged” means GitHub reports the PR as merged. Closed or superseded work is
-not presented as accepted impact. Totals were verified through GitHub's search
-API.</sub>
+<sub>Counts are merged PRs over all PRs submitted from this account, verified
+through GitHub's search API. Closed or superseded work is not counted as
+accepted impact.</sub>
 
-## A few contributions I’m proud of
+## Work I'm proud of
 
-- [**Reactive Resume #3387**](https://github.com/amruthpillai/reactive-resume/pull/3387) — repaired form-control label and accessibility contracts with regression coverage.
-- [**Beszel #2269**](https://github.com/henrygd/beszel/pull/2269) — corrected GPU chart layout behavior and worked through maintainer feedback to merge.
-- [**HyperFrames #3387**](https://github.com/heygen-com/hyperframes/pull/3387) — improved missing-manifest diagnostics across producer and CLI paths.
-- [**Prometheus docs #3079**](https://github.com/prometheus/docs/pull/3079) — fixed CI link validation while keeping the final change narrowly scoped.
+- [**Reactive Resume #3387**](https://github.com/amruthpillai/reactive-resume/pull/3387) — repaired form-control label and accessibility contracts, with regression coverage.
+- [**Beszel #2269**](https://github.com/henrygd/beszel/pull/2269) — corrected GPU chart layout behaviour and worked through maintainer review to merge.
+- [**HyperFrames #3387**](https://github.com/heygen-com/hyperframes/pull/3387) — surfaced every tried path in missing-manifest errors, across producer and CLI.
 
-## Systems I build
+## Latest from the channel
 
-| [Shopmatic](https://github.com/santhiprakash/shopmatic) | [FreshLane](https://github.com/santhiprakash/freshlane) | [RestroMenu](https://github.com/santhiprakash/restromenu) |
-|:--|:--|:--|
-| Storefront infrastructure for creators and affiliate marketers. | A neighborhood commerce experience built with Next.js. | Practical restaurant menu cards with PDF and PNG export. |
-| [**View source →**](https://github.com/santhiprakash/shopmatic) | [**View source →**](https://github.com/santhiprakash/freshlane) | [**View source →**](https://github.com/santhiprakash/restromenu) |
+<!-- YOUTUBE:START -->
+<!-- YOUTUBE:END -->
 
-## How I work
+<sub>Build-first walkthroughs on cloud, AI, and developer tooling —
+[subscribe on YouTube](https://www.youtube.com/@santhiprakashb).</sub>
 
-I use supervised AI workflows for research, reproduction, testing, and review
-monitoring. I remain responsible for selecting the work, validating the actual
-production path, submitting the change, and every maintainer conversation.
-
-> A green test is evidence, not permission. A contribution should also fit the
-> project’s policy, solve the reporter’s real problem, and be worth a
-> maintainer’s attention.
-
-**Current focus:** reliable agent workflows · developer tooling · Azure cloud
-architecture · practical AI education
+---
 
 <div align="center">
 
 ### Build something useful with me
 
-[**santhiprakash.com**](https://santhiprakash.com) · [**connect@santhiprakash.com**](mailto:connect@santhiprakash.com)
+Projects are pinned below · [**santhiprakash.com**](https://santhiprakash.com) · [**connect@santhiprakash.com**](mailto:connect@santhiprakash.com)
 
 </div>
