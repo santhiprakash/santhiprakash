@@ -1,6 +1,6 @@
 <div align="center">
 
-![Santhi Prakash — AI systems builder and open-source contributor](./assets/profile-header.svg)
+![Santhi Prakash — AI systems builder and open-source contributor](./assets/profile-header.png)
 
 [![Website](https://img.shields.io/badge/santhiprakash.com-0b1f35?style=for-the-badge&logo=safari&logoColor=55d6be)](https://santhiprakash.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0b1f35?style=for-the-badge&logo=linkedin&logoColor=72a7ff)](https://linkedin.com/in/santhiprakashb)
