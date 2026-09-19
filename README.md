@@ -1,68 +1,58 @@
-<div align="center">
+<p align="center">
+  <img src="./assets/profile-header.png" alt="Santhi Prakash — Microsoft Certified Trainer. I land the fix. Then I teach it." width="100%" />
+</p>
 
-![Santhi Prakash — AI systems builder and open-source contributor](./assets/profile-header.png)
+I land production fixes in tools people actually run — then I teach the lesson. Microsoft Certified Trainer. TypeScript, Python, Azure, Postgres, LLMs.
 
-[![Website](https://img.shields.io/badge/santhiprakash.com-0b1f35?style=for-the-badge&logo=safari&logoColor=55d6be)](https://santhiprakash.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0b1f35?style=for-the-badge&logo=linkedin&logoColor=72a7ff)](https://linkedin.com/in/santhiprakashb)
-[![YouTube](https://img.shields.io/badge/YouTube-0b1f35?style=for-the-badge&logo=youtube&logoColor=ff6b6b)](https://www.youtube.com/@santhiprakashb)
-[![Email](https://img.shields.io/badge/Let's_talk-0b1f35?style=for-the-badge&logo=gmail&logoColor=f3f7fb)](mailto:connect@santhiprakash.com)
+[santhiprakash.com](https://santhiprakash.com) · [LinkedIn](https://linkedin.com/in/santhiprakashb) · [YouTube](https://www.youtube.com/@santhiprakashb) · [connect@santhiprakash.com](mailto:connect@santhiprakash.com)
 
-</div>
+## Upstream
 
-I build AI workflows, developer tools, and resilient cloud systems that survive
-contact with production — TypeScript, Python, Azure, Postgres, and LLMs. I teach
-the lessons in practical, build-first sessions.
+Merged means a maintainer took it. Opened is everything I submitted, including work that was closed or superseded. Badges are live.
 
-<div align="center">
+| Project | What I work on there | Merged | Opened |
+|:--|:--|:--:|:--:|
+| [**OpenMausBot**](https://github.com/milind-soni/OpenMausBot) | Agentic desktop bot — Electron, Windows/macOS edge cases | [![merged](https://img.shields.io/github/issues-search/milind-soni/OpenMausBot?query=is%3Apr+is%3Amerged+author%3Asanthiprakash&label=merged&color=C2974A)](https://github.com/milind-soni/OpenMausBot/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) | [![opened](https://img.shields.io/github/issues-search/milind-soni/OpenMausBot?query=is%3Apr+author%3Asanthiprakash&label=opened&color=14213D)](https://github.com/milind-soni/OpenMausBot/pulls?q=is%3Apr+author%3Asanthiprakash) |
+| [**Reactive Resume**](https://github.com/reactive-resume/reactive-resume) | Privacy-first resume builder — forms, schema, a11y | [![merged](https://img.shields.io/github/issues-search/reactive-resume/reactive-resume?query=is%3Apr+is%3Amerged+author%3Asanthiprakash&label=merged&color=C2974A)](https://github.com/reactive-resume/reactive-resume/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) | [![opened](https://img.shields.io/github/issues-search/reactive-resume/reactive-resume?query=is%3Apr+author%3Asanthiprakash&label=opened&color=14213D)](https://github.com/reactive-resume/reactive-resume/pulls?q=is%3Apr+author%3Asanthiprakash) |
+| [**Remotion**](https://github.com/remotion-dev/remotion) | Programmatic video with React | [![merged](https://img.shields.io/github/issues-search/remotion-dev/remotion?query=is%3Apr+is%3Amerged+author%3Asanthiprakash&label=merged&color=C2974A)](https://github.com/remotion-dev/remotion/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) | [![opened](https://img.shields.io/github/issues-search/remotion-dev/remotion?query=is%3Apr+author%3Asanthiprakash&label=opened&color=14213D)](https://github.com/remotion-dev/remotion/pulls?q=is%3Apr+author%3Asanthiprakash) |
+| [**OpenShip**](https://github.com/oblien/openship) | Self-hosted deployment platform | [![merged](https://img.shields.io/github/issues-search/oblien/openship?query=is%3Apr+is%3Amerged+author%3Asanthiprakash&label=merged&color=C2974A)](https://github.com/oblien/openship/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) | [![opened](https://img.shields.io/github/issues-search/oblien/openship?query=is%3Apr+author%3Asanthiprakash&label=opened&color=14213D)](https://github.com/oblien/openship/pulls?q=is%3Apr+author%3Asanthiprakash) |
+| [**HyperFrames**](https://github.com/heygen-com/hyperframes) | HTML-to-video tooling for agents | [![merged](https://img.shields.io/github/issues-search/heygen-com/hyperframes?query=is%3Apr+is%3Amerged+author%3Asanthiprakash&label=merged&color=C2974A)](https://github.com/heygen-com/hyperframes/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) | [![opened](https://img.shields.io/github/issues-search/heygen-com/hyperframes?query=is%3Apr+author%3Asanthiprakash&label=opened&color=14213D)](https://github.com/heygen-com/hyperframes/pulls?q=is%3Apr+author%3Asanthiprakash) |
+| [**Beszel**](https://github.com/henrygd/beszel) | Lightweight server monitoring | [![merged](https://img.shields.io/github/issues-search/henrygd/beszel?query=is%3Apr+is%3Amerged+author%3Asanthiprakash&label=merged&color=C2974A)](https://github.com/henrygd/beszel/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) | [![opened](https://img.shields.io/github/issues-search/henrygd/beszel?query=is%3Apr+author%3Asanthiprakash&label=opened&color=14213D)](https://github.com/henrygd/beszel/pulls?q=is%3Apr+author%3Asanthiprakash) |
+| [**Prettier**](https://github.com/prettier/prettier) | Opinionated code formatting | [![merged](https://img.shields.io/github/issues-search/prettier/prettier?query=is%3Apr+is%3Amerged+author%3Asanthiprakash&label=merged&color=C2974A)](https://github.com/prettier/prettier/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) | [![opened](https://img.shields.io/github/issues-search/prettier/prettier?query=is%3Apr+author%3Asanthiprakash&label=opened&color=14213D)](https://github.com/prettier/prettier/pulls?q=is%3Apr+author%3Asanthiprakash) |
 
-![Agent workflows](https://img.shields.io/badge/agent_workflows-0b1f35?style=flat-square)
-![Developer tooling](https://img.shields.io/badge/developer_tooling-0b1f35?style=flat-square)
-![Azure architecture](https://img.shields.io/badge/Azure_architecture-0b1f35?style=flat-square)
-![Practical AI education](https://img.shields.io/badge/practical_AI_education-0b1f35?style=flat-square)
+## I'd show a maintainer these three
 
-</div>
+- [**agent-skills #574**](https://github.com/addyosmani/agent-skills/pull/574) — stopped a SessionStart hook from injecting a second skill router (~3.5k wasted tokens a session). Merged 18 Sep 2026.
+- [**Beszel #2325**](https://github.com/henrygd/beszel/pull/2325) — skip `zpool list` when `/dev/zfs` is missing inside the container, so Linux hosts without ZFS stop erroring.
+- [**OpenMausBot #1324**](https://github.com/milind-soni/OpenMausBot/pull/1324) — stale Windows data-dir lease after same-boot PID reuse, with tests for hosts that no longer ship `wmic`.
 
----
+## On the channel
 
-## Open-source footprint
+Build-first walkthroughs — [subscribe](https://www.youtube.com/@santhiprakashb).
 
-Chosen for project reach and merge rate — the share of my submitted PRs that
-maintainers actually merged. Snapshot: **6 September 2026**.
-
-| Project | What it builds | Merged / submitted |
-|:--|:--|:--:|
-| [**Remotion**](https://github.com/remotion-dev/remotion) | Programmatic video with React | [![26 of 51 merged](https://img.shields.io/badge/26_%2F_51-2ea44f?style=flat-square)](https://github.com/remotion-dev/remotion/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) |
-| [**Reactive Resume**](https://github.com/amruthpillai/reactive-resume) | Privacy-first resume builder | [![16 of 17 merged](https://img.shields.io/badge/16_%2F_17-2ea44f?style=flat-square)](https://github.com/amruthpillai/reactive-resume/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) |
-| [**OpenMausBot**](https://github.com/milind-soni/OpenMausBot) | Open-source agentic bot | [![17 of 18 merged](https://img.shields.io/badge/17_%2F_18-2ea44f?style=flat-square)](https://github.com/milind-soni/OpenMausBot/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) |
-| [**OpenShip**](https://github.com/oblien/openship) | Self-hosted deployment platform | [![13 of 33 merged](https://img.shields.io/badge/13_%2F_33-2ea44f?style=flat-square)](https://github.com/oblien/openship/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) |
-| [**HyperFrames**](https://github.com/heygen-com/hyperframes) | HTML-to-video tooling for agents | [![8 of 14 merged](https://img.shields.io/badge/8_%2F_14-2ea44f?style=flat-square)](https://github.com/heygen-com/hyperframes/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) |
-| [**OpenClaw**](https://github.com/openclaw/openclaw) | Cross-platform personal AI | [![9 of 35 merged](https://img.shields.io/badge/9_%2F_35-2ea44f?style=flat-square)](https://github.com/openclaw/openclaw/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) |
-| [**Prettier**](https://github.com/prettier/prettier) | Opinionated code formatting | [![7 of 28 merged](https://img.shields.io/badge/7_%2F_28-2ea44f?style=flat-square)](https://github.com/prettier/prettier/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) |
-
-<sub>Counts are merged PRs over all PRs submitted from this account, verified
-through GitHub's search API. Closed or superseded work is not counted as
-accepted impact.</sub>
-
-## Work I'm proud of
-
-- [**Reactive Resume #3387**](https://github.com/amruthpillai/reactive-resume/pull/3387) — repaired form-control label and accessibility contracts, with regression coverage.
-- [**Beszel #2269**](https://github.com/henrygd/beszel/pull/2269) — corrected GPU chart layout behaviour and worked through maintainer review to merge.
-- [**HyperFrames #3387**](https://github.com/heygen-com/hyperframes/pull/3387) — surfaced every tried path in missing-manifest errors, across producer and CLI.
-
-## Latest from the channel
-
-<!-- YOUTUBE:START -->
-<!-- YOUTUBE:END -->
-
-<sub>Build-first walkthroughs on cloud, AI, and developer tooling —
-[subscribe on YouTube](https://www.youtube.com/@santhiprakashb).</sub>
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <a href="https://www.youtube.com/watch?v=CVsvubTJsb0">
+        <img src="https://img.youtube.com/vi/CVsvubTJsb0/hqdefault.jpg" alt="ZCode beginner guide" />
+      </a><br/>
+      <a href="https://www.youtube.com/watch?v=CVsvubTJsb0">ZCode: install, one safe change, verify</a>
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://www.youtube.com/watch?v=y8yeQb8wTa8">
+        <img src="https://img.youtube.com/vi/y8yeQb8wTa8/hqdefault.jpg" alt="Granular terminal tutorial" />
+      </a><br/>
+      <a href="https://www.youtube.com/watch?v=y8yeQb8wTa8">Granular: the terminal for everybody</a>
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://www.youtube.com/watch?v=JJ3DNTszo4o">
+        <img src="https://img.youtube.com/vi/JJ3DNTszo4o/hqdefault.jpg" alt="Cline walkthrough" />
+      </a><br/>
+      <a href="https://www.youtube.com/watch?v=JJ3DNTszo4o">Cline: free AI coding agent, full walkthrough</a>
+    </td>
+  </tr>
+</table>
 
 ---
 
-<div align="center">
-
-### Build something useful with me
-
-Projects are pinned below · [**santhiprakash.com**](https://santhiprakash.com) · [**connect@santhiprakash.com**](mailto:connect@santhiprakash.com)
-
-</div>
+Pinned below is upstream work, not product demos. [**santhiprakash.com**](https://santhiprakash.com) · [**connect@santhiprakash.com**](mailto:connect@santhiprakash.com)
