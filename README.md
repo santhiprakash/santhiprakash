@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="./assets/profile-header.png" alt="Santhi Prakash — Microsoft Certified Trainer. I land the fix. Then I teach it." width="100%" />
+  <picture>
+    <source media="(min-width: 768px)" srcset="./assets/profile-header.png" />
+    <img src="./assets/profile-header-mobile.png" alt="Santhi Prakash — Microsoft Certified Trainer. I land the fix. Then I teach it." width="100%" />
+  </picture>
 </p>
 
 I land production fixes in tools people actually run — then I teach the lesson. Microsoft Certified Trainer. TypeScript, Python, Azure, Postgres, LLMs.
