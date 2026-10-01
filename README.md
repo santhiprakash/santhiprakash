@@ -11,17 +11,39 @@ I land production fixes in tools people actually run — then I teach the lesson
 
 ## Upstream
 
-Merged means a maintainer took it. Opened is everything I submitted, including work that was closed or superseded. Badges are live.
+Merged means a maintainer took it. Also ships as [@garudaccs](https://github.com/garudaccs) — same person; both accounts count below.
 
-| Project | What I work on there | Merged | Opened |
-|:--|:--|:--:|:--:|
-| [**OpenMausBot**](https://github.com/milind-soni/OpenMausBot) | Agentic desktop bot — Electron, Windows/macOS edge cases | [![merged](https://img.shields.io/github/issues-search/milind-soni/OpenMausBot?query=is%3Apr+is%3Amerged+author%3Asanthiprakash&label=merged&color=C2974A)](https://github.com/milind-soni/OpenMausBot/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) | [![opened](https://img.shields.io/github/issues-search/milind-soni/OpenMausBot?query=is%3Apr+author%3Asanthiprakash&label=opened&color=14213D)](https://github.com/milind-soni/OpenMausBot/pulls?q=is%3Apr+author%3Asanthiprakash) |
-| [**Reactive Resume**](https://github.com/reactive-resume/reactive-resume) | Privacy-first resume builder — forms, schema, a11y | [![merged](https://img.shields.io/github/issues-search/reactive-resume/reactive-resume?query=is%3Apr+is%3Amerged+author%3Asanthiprakash&label=merged&color=C2974A)](https://github.com/reactive-resume/reactive-resume/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) | [![opened](https://img.shields.io/github/issues-search/reactive-resume/reactive-resume?query=is%3Apr+author%3Asanthiprakash&label=opened&color=14213D)](https://github.com/reactive-resume/reactive-resume/pulls?q=is%3Apr+author%3Asanthiprakash) |
-| [**Remotion**](https://github.com/remotion-dev/remotion) | Programmatic video with React | [![merged](https://img.shields.io/github/issues-search/remotion-dev/remotion?query=is%3Apr+is%3Amerged+author%3Asanthiprakash&label=merged&color=C2974A)](https://github.com/remotion-dev/remotion/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) | [![opened](https://img.shields.io/github/issues-search/remotion-dev/remotion?query=is%3Apr+author%3Asanthiprakash&label=opened&color=14213D)](https://github.com/remotion-dev/remotion/pulls?q=is%3Apr+author%3Asanthiprakash) |
-| [**OpenShip**](https://github.com/oblien/openship) | Self-hosted deployment platform | [![merged](https://img.shields.io/github/issues-search/oblien/openship?query=is%3Apr+is%3Amerged+author%3Asanthiprakash&label=merged&color=C2974A)](https://github.com/oblien/openship/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) | [![opened](https://img.shields.io/github/issues-search/oblien/openship?query=is%3Apr+author%3Asanthiprakash&label=opened&color=14213D)](https://github.com/oblien/openship/pulls?q=is%3Apr+author%3Asanthiprakash) |
-| [**HyperFrames**](https://github.com/heygen-com/hyperframes) | HTML-to-video tooling for agents | [![merged](https://img.shields.io/github/issues-search/heygen-com/hyperframes?query=is%3Apr+is%3Amerged+author%3Asanthiprakash&label=merged&color=C2974A)](https://github.com/heygen-com/hyperframes/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) | [![opened](https://img.shields.io/github/issues-search/heygen-com/hyperframes?query=is%3Apr+author%3Asanthiprakash&label=opened&color=14213D)](https://github.com/heygen-com/hyperframes/pulls?q=is%3Apr+author%3Asanthiprakash) |
-| [**Beszel**](https://github.com/henrygd/beszel) | Lightweight server monitoring | [![merged](https://img.shields.io/github/issues-search/henrygd/beszel?query=is%3Apr+is%3Amerged+author%3Asanthiprakash&label=merged&color=C2974A)](https://github.com/henrygd/beszel/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) | [![opened](https://img.shields.io/github/issues-search/henrygd/beszel?query=is%3Apr+author%3Asanthiprakash&label=opened&color=14213D)](https://github.com/henrygd/beszel/pulls?q=is%3Apr+author%3Asanthiprakash) |
-| [**Prettier**](https://github.com/prettier/prettier) | Opinionated code formatting | [![merged](https://img.shields.io/github/issues-search/prettier/prettier?query=is%3Apr+is%3Amerged+author%3Asanthiprakash&label=merged&color=C2974A)](https://github.com/prettier/prettier/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) | [![opened](https://img.shields.io/github/issues-search/prettier/prettier?query=is%3Apr+author%3Asanthiprakash&label=opened&color=14213D)](https://github.com/prettier/prettier/pulls?q=is%3Apr+author%3Asanthiprakash) |
+<!-- OSS-STATS:START -->
+**166** merged PRs across **23** open-source projects.
+
+| Project | Merged |
+|:--|:--:|
+| [**remotion**](https://github.com/remotion-dev/remotion) <br/><sub>remotion-dev/remotion</sub> | 28 · 2 via [@garudaccs](https://github.com/garudaccs) |
+| [**OpenMausBot**](https://github.com/milind-soni/OpenMausBot) <br/><sub>milind-soni/OpenMausBot</sub> | 27 |
+| [**reactive-resume**](https://github.com/reactive-resume/reactive-resume) <br/><sub>reactive-resume/reactive-resume</sub> | 20 · 1 via [@garudaccs](https://github.com/garudaccs) |
+| [**openship**](https://github.com/oblien/openship) <br/><sub>oblien/openship</sub> | 16 |
+| [**openalgo**](https://github.com/marketcalls/openalgo) <br/><sub>marketcalls/openalgo</sub> | 10 |
+| [**hyperframes**](https://github.com/heygen-com/hyperframes) <br/><sub>heygen-com/hyperframes</sub> | 9 |
+| [**openclaw**](https://github.com/openclaw/openclaw) <br/><sub>openclaw/openclaw</sub> | 9 |
+| [**prettier**](https://github.com/prettier/prettier) <br/><sub>prettier/prettier</sub> | 7 |
+| [**beszel**](https://github.com/henrygd/beszel) <br/><sub>henrygd/beszel</sub> | 5 |
+| [**BossConsole**](https://github.com/risa-labs-inc/BossConsole) <br/><sub>risa-labs-inc/BossConsole</sub> | 5 |
+| [**mautic**](https://github.com/mautic/mautic) <br/><sub>mautic/mautic</sub> | 4 |
+| [**docs**](https://github.com/prometheus/docs) <br/><sub>prometheus/docs</sub> | 4 |
+| [**better-voice**](https://github.com/TarunTomar122/better-voice) <br/><sub>TarunTomar122/better-voice</sub> | 3 |
+| [**opensre**](https://github.com/Tracer-Cloud/opensre) <br/><sub>Tracer-Cloud/opensre</sub> | 3 |
+| [**vite**](https://github.com/vitejs/vite) <br/><sub>vitejs/vite</sub> | 3 |
+| [**agent-skills**](https://github.com/addyosmani/agent-skills) <br/><sub>addyosmani/agent-skills</sub> | 2 |
+| [**docs**](https://github.com/docker/docs) <br/><sub>docker/docs</sub> | 2 |
+| [**freeCodeCamp**](https://github.com/freeCodeCamp/freeCodeCamp) <br/><sub>freeCodeCamp/freeCodeCamp</sub> | 2 |
+| [**opentelemetry.io**](https://github.com/open-telemetry/opentelemetry.io) <br/><sub>open-telemetry/opentelemetry.io</sub> | 2 |
+| [**paperclip**](https://github.com/paperclipai/paperclip) <br/><sub>paperclipai/paperclip</sub> | 2 |
+| [**ECC**](https://github.com/affaan-m/ECC) <br/><sub>affaan-m/ECC</sub> | 1 |
+| [**archify**](https://github.com/HoneyTyagii/archify) <br/><sub>HoneyTyagii/archify</sub> | 1 |
+| [**rune**](https://github.com/unstablebuild/rune) <br/><sub>unstablebuild/rune</sub> | 1 |
+
+<sub>Auto-updated daily from live GitHub data — [`scripts/update-oss-stats.mjs`](scripts/update-oss-stats.mjs). Counts [@santhiprakash](https://github.com/santhiprakash) + [@garudaccs](https://github.com/garudaccs); excludes repos owned by either account or [@santhiprakashb](https://github.com/santhiprakashb).</sub>
+<!-- OSS-STATS:END -->
 
 ## I'd show a maintainer these three
 
@@ -58,4 +80,4 @@ Build-first walkthroughs — [subscribe](https://www.youtube.com/@santhiprakashb
 
 ---
 
-Pinned below is upstream work, not product demos. [**santhiprakash.com**](https://santhiprakash.com) · [**connect@santhiprakash.com**](mailto:connect@santhiprakash.com)
+Pins below rotate; the Upstream table above is the durable record. [**santhiprakash.com**](https://santhiprakash.com) · [**connect@santhiprakash.com**](mailto:connect@santhiprakash.com)
