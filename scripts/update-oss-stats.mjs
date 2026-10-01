@@ -104,7 +104,7 @@ async function main() {
     .join("\n");
 
   const section = `${START_MARKER}
-**${total}** merged PRs across **${projectCount}** open-source projects.
+Open source contributions: ${total} PRs merged across ${projectCount} projects.
 
 | Project | Merged |
 |:--|:--:|

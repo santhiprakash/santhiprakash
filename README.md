@@ -14,7 +14,7 @@ I land production fixes in tools people actually run — then I teach the lesson
 Merged means a maintainer took it. Also ships as [@garudaccs](https://github.com/garudaccs) — same person; both accounts count below.
 
 <!-- OSS-STATS:START -->
-**166** merged PRs across **23** open-source projects.
+Open source contributions: 166 PRs merged across 23 projects.
 
 | Project | Merged |
 |:--|:--:|

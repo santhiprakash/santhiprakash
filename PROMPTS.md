@@ -7,3 +7,11 @@
 **Did:** Restored workflow + improved script; regenerated README Upstream block with live totals; added PROGRESS.md / PROMPTS.md; opened PR.
 
 **Outcome:** worked first try (verify against live GitHub search before commit).
+
+## 2026-10-01 17:46 IST — Cursor Cloud Agent (Grok 4.5)
+
+**Prompt:** PR #2 follow-up — one plain generated line above the per-project table stating total merged OSS PRs (e.g. `Open source contributions: 166 PRs merged across 23 projects.`); inside markers; no duplicate.
+
+**Did:** Changed script headline format; regenerated README; pushed same branch; updated PR description.
+
+**Outcome:** worked first try.
