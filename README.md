@@ -25,7 +25,7 @@ I land production fixes in tools people actually run — then I teach the lesson
 | [**Prettier**](https://github.com/prettier/prettier) | Opinionated code formatting | [![merged](https://img.shields.io/github/issues-search/prettier/prettier?query=is%3Apr+is%3Amerged+author%3Asanthiprakash&label=merged&color=C2974A)](https://github.com/prettier/prettier/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) | [![opened](https://img.shields.io/github/issues-search/prettier/prettier?query=is%3Apr+author%3Asanthiprakash&label=opened&color=14213D)](https://github.com/prettier/prettier/pulls?q=is%3Apr+author%3Asanthiprakash) |
 | [**Synara**](https://github.com/Emanuele-web04/synara) | Coding-agent workspace — server behavior and the web UI | [![merged](https://img.shields.io/github/issues-search/Emanuele-web04/synara?query=is%3Apr+is%3Amerged+author%3Asanthiprakash&label=merged&color=C2974A)](https://github.com/Emanuele-web04/synara/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) | [![opened](https://img.shields.io/github/issues-search/Emanuele-web04/synara?query=is%3Apr+author%3Asanthiprakash&label=opened&color=14213D)](https://github.com/Emanuele-web04/synara/pulls?q=is%3Apr+author%3Asanthiprakash) |
 
-## I'd show a maintainer these three
+## Three recent examples
 
 - [**OpenMausBot #2287**](https://github.com/milind-soni/OpenMausBot/pull/2287) — the desktop app no longer quits while startup is still running, and a boot that ends with no window still exits. Merged 7 Oct 2026.
 - [**Reactive Resume #3571**](https://github.com/reactive-resume/reactive-resume/pull/3571) — a Redis URL with a username and no password is rejected in config, instead of failing `AUTH` on boot. Merged 5 Oct 2026.
