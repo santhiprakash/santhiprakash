@@ -11,9 +11,7 @@ I land production fixes in tools people actually run — then I teach the lesson
 
 ## Upstream
 
-**184** pull requests merged into other people's repositories in the twelve months ending 7 Oct 2026, across 24 projects. My own repositories are not included. Merged means a maintainer took it. This total is a snapshot; the badges update on their own.
-
-Opened is everything I submitted, including work that was closed or superseded. The rows below are the projects with the most of those merges, not all 24.
+**185** pull requests merged. I just started contributing to open-source projects.
 
 | Project | What I work on there | Merged | Opened |
 |:--|:--|:--:|:--:|
