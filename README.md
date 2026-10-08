@@ -11,7 +11,7 @@ I land production fixes in tools people actually run — then I teach the lesson
 
 ## Upstream
 
-**185** pull requests merged. I just started contributing to open-source projects.
+**185** pull requests merged. I recently started contributing to open-source projects.
 
 | Project | What I work on there | Merged | Opened |
 |:--|:--|:--:|:--:|
