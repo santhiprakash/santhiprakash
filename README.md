@@ -11,7 +11,7 @@ I land production fixes in tools people actually run — then I teach the lesson
 
 ## Upstream
 
-**185** pull requests merged. I recently started contributing to open-source projects.
+**231** pull requests merged in other people's projects, counted 11 Nov 2026. I recently started contributing to open-source projects.
 
 | Project | What I work on there | Merged | Opened |
 |:--|:--|:--:|:--:|
@@ -27,9 +27,9 @@ I land production fixes in tools people actually run — then I teach the lesson
 
 ## Three recent examples
 
-- [**OpenMausBot #2287**](https://github.com/milind-soni/OpenMausBot/pull/2287) — the desktop app no longer quits while startup is still running, and a boot that ends with no window still exits. Merged 7 Oct 2026.
-- [**Reactive Resume #3571**](https://github.com/reactive-resume/reactive-resume/pull/3571) — a Redis URL with a username and no password is rejected in config, instead of failing `AUTH` on boot. Merged 5 Oct 2026.
-- [**Beszel #2486**](https://github.com/henrygd/beszel/pull/2486) — LVM volumes such as `/dev/vg1/volume_1` show disk throughput, by resolving the device-mapper symlink. Merged 1 Oct 2026.
+- [**Beszel #2807**](https://github.com/henrygd/beszel/pull/2807) — rollup averages no longer include the record from the previous interval. Merged 11 Nov 2026.
+- [**listmonk #3349**](https://github.com/knadh/listmonk/pull/3349) — cloning a campaign drops a past send date, so the clone saves as a draft. Merged 11 Nov 2026.
+- [**Navidrome #6366**](https://github.com/navidrome/navidrome/pull/6366) — a negative StartIndex on Jellyfin browse requests is treated as zero instead of panicking. Merged 10 Nov 2026.
 
 ## On the channel
 
