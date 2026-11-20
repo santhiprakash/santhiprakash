@@ -9,7 +9,7 @@ I land production fixes in tools people actually run — then I teach the lesson
 
 [santhiprakash.com](https://santhiprakash.com) · [LinkedIn](https://linkedin.com/in/santhiprakashb) · [YouTube](https://www.youtube.com/@santhiprakashb) · [connect@santhiprakash.com](mailto:connect@santhiprakash.com)
 
-## Open source
+## Open-source contributions
 
 **253** pull requests merged across open-source projects, counted 20 Nov 2026.
 
