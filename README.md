@@ -11,7 +11,7 @@ I land production fixes in tools people actually run — then I teach the lesson
 
 ## Open source
 
-**235** pull requests merged across open-source projects, counted 15 Nov 2026.
+**253** pull requests merged across open-source projects, counted 20 Nov 2026.
 
 | Project | Contribution areas | Merged | Submitted |
 |:--|:--|:--:|:--:|
@@ -27,9 +27,9 @@ I land production fixes in tools people actually run — then I teach the lesson
 
 ## Three recent examples
 
-- [**Casdoor #6086**](https://github.com/casdoor/casdoor/pull/6086) — anonymous upload requests now receive an authorization denial instead of triggering a server panic. Merged 15 Nov 2026.
-- [**OpenAlgo #1921**](https://github.com/marketcalls/openalgo/pull/1921) — remove stale read-only `.env` mount guidance from Docker docs. Merged 14 Nov 2026.
-- [**Dex #1277**](https://github.com/exmergo/dex/pull/1277) — report unparseable semantic YAML instead of silently hiding definitions. Merged 12 Nov 2026.
+- [**Nim #26762**](https://github.com/nim-lang/Nim/pull/26762) — `unicode.strip` now returns an empty string when every trailing rune should be stripped. Merged 20 Nov 2026.
+- [**Reactive Resume #3999**](https://github.com/reactive-resume/reactive-resume/pull/3999) — adding a career fact works on plain HTTP, because new ids no longer depend on `crypto.randomUUID`. Merged 20 Nov 2026.
+- [**Memos #6591**](https://github.com/usememos/memos/pull/6591) — tag settings count memos that match a wildcard rule, not only an exact tag name. Merged 20 Nov 2026.
 
 ## On the channel
 
