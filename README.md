@@ -9,9 +9,9 @@ I land production fixes in tools people actually run — then I teach the lesson
 
 [santhiprakash.com](https://santhiprakash.com) · [LinkedIn](https://linkedin.com/in/santhiprakashb) · [YouTube](https://www.youtube.com/@santhiprakashb) · [connect@santhiprakash.com](mailto:connect@santhiprakash.com)
 
-## 253 fixes landed upstream
+## 266 fixes landed upstream
 
-Merged into other people's projects, counted 20 Nov 2026.
+Merged into other people's projects, counted 25 Nov 2026.
 
 | Project | Contribution areas | Merged | Submitted |
 |:--|:--|:--:|:--:|
@@ -27,9 +27,9 @@ Merged into other people's projects, counted 20 Nov 2026.
 
 ## Three recent examples
 
-- [**Nim #26762**](https://github.com/nim-lang/Nim/pull/26762) — `unicode.strip` now returns an empty string when every trailing rune should be stripped. Merged 20 Nov 2026.
-- [**Reactive Resume #3999**](https://github.com/reactive-resume/reactive-resume/pull/3999) — adding a career fact works on plain HTTP, because new ids no longer depend on `crypto.randomUUID`. Merged 20 Nov 2026.
-- [**Memos #6591**](https://github.com/usememos/memos/pull/6591) — tag settings count memos that match a wildcard rule, not only an exact tag name. Merged 20 Nov 2026.
+- [**Navidrome #6364**](https://github.com/navidrome/navidrome/pull/6364) — installing the RPM on an SELinux-enforcing distro no longer raises an AVC denial: the service home is created without copying `/etc/skel`. Merged 25 Nov 2026.
+- [**Nim #26785**](https://github.com/nim-lang/Nim/pull/26785) — growing a seq or string under `--mm:refc` now runs with the GC disabled, so a finalizer can no longer overwrite the elements mid-growth. Merged 24 Nov 2026.
+- [**Salt #70810**](https://github.com/saltstack/salt/pull/70810) — the TCP publish server keeps TLS subscribers that present no client certificate when the master is configured for server-only TLS. Merged 24 Nov 2026.
 
 ## On the channel
 
