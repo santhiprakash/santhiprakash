@@ -1,0 +1,113 @@
+{
+  "login": "santhiprakash",
+  "excluded_owners": [
+    "santhiprakash",
+    "minervainfo",
+    "minervainfoedtech",
+    "santhiprakashb"
+  ],
+  "merged_total": 340,
+  "upstream": {
+    "merged": 266,
+    "repos": 48,
+    "submitted": 679,
+    "open": 56,
+    "merge_rate_pct": 39.2,
+    "last_30_days": 66,
+    "by_month": [
+      {
+        "month": "2026-07",
+        "merged": 52
+      },
+      {
+        "month": "2026-08",
+        "merged": 60
+      },
+      {
+        "month": "2026-09",
+        "merged": 51
+      },
+      {
+        "month": "2026-10",
+        "merged": 46
+      },
+      {
+        "month": "2026-11",
+        "merged": 57
+      }
+    ],
+    "top_repos": [
+      {
+        "repo": "milind-soni/OpenMausBot",
+        "merged": 39
+      },
+      {
+        "repo": "reactive-resume/reactive-resume",
+        "merged": 30
+      },
+      {
+        "repo": "remotion-dev/remotion",
+        "merged": 26
+      },
+      {
+        "repo": "oblien/openship",
+        "merged": 19
+      },
+      {
+        "repo": "Emanuele-web04/synara",
+        "merged": 14
+      },
+      {
+        "repo": "heygen-com/hyperframes",
+        "merged": 12
+      },
+      {
+        "repo": "henrygd/beszel",
+        "merged": 11
+      },
+      {
+        "repo": "marketcalls/openalgo",
+        "merged": 11
+      },
+      {
+        "repo": "openclaw/openclaw",
+        "merged": 9
+      },
+      {
+        "repo": "prettier/prettier",
+        "merged": 8
+      }
+    ],
+    "latest": [
+      {
+        "repo": "navidrome/navidrome",
+        "number": 6364,
+        "title": "fix(release): skip useradd's /etc/skel copy to prevent SELinux AVC",
+        "url": "https://github.com/navidrome/navidrome/pull/6364",
+        "merged_at": "2026-11-25"
+      },
+      {
+        "repo": "koalaman/shellcheck",
+        "number": 3620,
+        "title": "fix(SC2317): let a case's last clause fall through to end on match failure",
+        "url": "https://github.com/koalaman/shellcheck/pull/3620",
+        "merged_at": "2026-11-24"
+      },
+      {
+        "repo": "saltstack/salt",
+        "number": 70810,
+        "title": "Fix TCP publish server dropping TLS subscribers without a client cert",
+        "url": "https://github.com/saltstack/salt/pull/70810",
+        "merged_at": "2026-11-24"
+      }
+    ]
+  },
+  "ai_disclosure": {
+    "states_assistance": 73,
+    "named_tool": {
+      "Cursor": 7,
+      "Grok": 2,
+      "Devin": 1
+    }
+  }
+}

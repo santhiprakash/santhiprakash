@@ -1,0 +1,54 @@
+name: Upstream count
+
+# Recomputes "N fixes landed upstream" in README.md and data/upstream-stats.json.
+# Definition and exclusions: MAINTAINING.md. Run by hand from the Actions tab.
+
+on:
+  schedule:
+    - cron: '30 0 * * *' # 06:00 IST, daily (GitHub schedules are UTC and can drift ~30 min)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: upstream-count
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Recompute
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/upstream-count.mjs
+
+      - name: Commit if anything changed
+        run: |
+          if git diff --quiet; then
+            # GitHub disables schedules on a repository with 60 days of no commits.
+            # An empty commit before that keeps the workflow alive.
+            age_days=$(( ( $(date +%s) - $(git log -1 --format=%ct) ) / 86400 ))
+            if [ "$age_days" -lt 45 ]; then
+              echo "Nothing to commit; last commit was $age_days day(s) ago."
+              exit 0
+            fi
+            message='chore: keepalive for the scheduled upstream count'
+          elif git diff --quiet -- README.md; then
+            message='chore: refresh upstream stats'
+          else
+            message='docs: refresh the upstream pull request count'
+          fi
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit --allow-empty -m "$message"
+          git push
