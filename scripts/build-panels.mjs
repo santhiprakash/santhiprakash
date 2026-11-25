@@ -58,8 +58,8 @@ for (const [key, [family, weight, file]] of Object.entries(FACE_FILES)) {
   available[family === SANS ? 'sans' : 'mono'] = true;
 }
 const FAM = {
-  sans: available.sans ? `'${SANS},${FALLBACK.sans}` : FALLBACK.sans,
-  mono: available.mono ? `'${MONO},${FALLBACK.mono}` : FALLBACK.mono,
+  sans: available.sans ? `'${SANS}',${FALLBACK.sans}` : FALLBACK.sans,
+  mono: available.mono ? `'${MONO}',${FALLBACK.mono}` : FALLBACK.mono,
 };
 
 // ---------- primitives ----------
