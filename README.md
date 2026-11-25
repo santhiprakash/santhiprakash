@@ -21,6 +21,8 @@ Merged into other people's projects, counted 25 Nov 2026.
   <img src="./assets/panel-agents-m.svg" alt="Coding agents operated: Claude Code, Codex CLI, Cursor, pi, Devin and Grok CLI, with what GitHub can attribute and how many upstream merges state AI assistance." width="100%" />
 </picture>
 
+### Live, per project
+
 | Project | Contribution areas | Merged | Submitted |
 |:--|:--|:--:|:--:|
 | [**Synara**](https://github.com/Emanuele-web04/synara) | Coding-agent workspace — server behavior and the web UI | [![merged](https://img.shields.io/github/issues-search/Emanuele-web04/synara?query=is%3Apr+is%3Amerged+author%3Asanthiprakash&label=merged&color=C2974A)](https://github.com/Emanuele-web04/synara/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) | [![submitted](https://img.shields.io/github/issues-search/Emanuele-web04/synara?query=is%3Apr+author%3Asanthiprakash&label=submitted&color=14213D)](https://github.com/Emanuele-web04/synara/pulls?q=is%3Apr+author%3Asanthiprakash) |
