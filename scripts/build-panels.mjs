@@ -223,16 +223,16 @@ function nameplate(mobile) {
     out.push(T(x, y, value, { family: 'mono', size: 28, weight: 500 }));
     out.push(lines(x, y + 19, label, 12, { family: 'mono', size: 10, fill: PAL.muted, spacing: 1 }));
   });
-  out.push(vline(W / 2, 114, 206));
-  out.push(sparkline(vals, P, W - P, 222, 266, PAL.ink));
-  out.push(T(P, 282, 'MERGED PER MONTH', { family: 'mono', size: 10, fill: PAL.muted, spacing: 1 }));
+  out.push(vline(W / 2, 114, 234));
+  out.push(sparkline(vals, P, W - P, 244, 286, PAL.ink));
+  out.push(T(P, 300, 'MERGED PER MONTH', { family: 'mono', size: 10, fill: PAL.muted, spacing: 1 }));
   legend.forEach((l, i) => {
     const x = P + (i % 2) * 190;
-    const y = 306 + Math.floor(i / 2) * 17;
+    const y = 324 + Math.floor(i / 2) * 17;
     out.push(`<line x1="${x}" y1="${y - 4}" x2="${x + 18}" y2="${y - 4}" stroke="${l.color}" stroke-width="2"/>`);
     out.push(T(x + 25, y, l.label, { family: 'mono', size: 11, fill: '#4A463D' }));
   });
-  return frame(W, 334, out.join(''), ['sans400', 'sans700', 'mono400', 'mono500']);
+  return frame(W, 352, out.join(''), ['sans400', 'sans700', 'mono400', 'mono500']);
 }
 
 // ---------- panel: lanes ----------
