@@ -1,0 +1,36 @@
+name: Build panel fonts
+
+# One-off: rebuilds the subsetted OFL fonts in assets/fonts/ from google/fonts.
+# Needed only when the pinned commit changes or a panel starts using new glyphs.
+# Scripts/build-fonts.sh does the work; fonttools is installed here, not on the MacBook.
+
+on: workflow_dispatch
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install --quiet 'fonttools[woff]'
+
+      - run: bash scripts/build-fonts.sh
+
+      - name: Commit if the subsets changed
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/fonts
+          if git diff --cached --quiet; then
+            echo "Font subsets unchanged."
+            exit 0
+          fi
+          git commit -m 'chore: rebuild the subsetted panel fonts'
+          git push
