@@ -134,7 +134,8 @@ async function collectStats() {
   return {
     login: LOGIN,
     excluded_owners: EXCLUDED_OWNERS,
-    merged_total: merged.length,
+    // Counts cover public upstream pull requests only: that is all a visitor can
+    // see, and all the workflow's GITHUB_TOKEN can see (no private-repo access).
     upstream: {
       merged: upstream.length,
       repos: perRepo.size,
