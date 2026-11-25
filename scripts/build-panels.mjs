@@ -30,7 +30,7 @@ const PAL = {
   red: '#B5402C',
   green: '#2E6B4A',
   ochre: '#B07C1E',
-  lessonBg: '#F3EFE4',
+  noteBg: '#F3EFE4',
 };
 const TRACE = ['#B5402C', '#2E6B4A', '#35618E', '#6E3A5D', '#B07C1E', '#5C7A3A'];
 const SANS = 'Schibsted Grotesk';
@@ -352,14 +352,14 @@ function card(mobile, W, x, y0, c) {
   const inner = 16;
   const labelW = 66;
   const paraChars = Math.floor((cardW - 2 * inner - labelW - 8) / (13.5 * 0.54));
-  const lessonChars = Math.floor((cardW - 24 - labelW) / (13.5 * 0.54));
+  const takeawayChars = Math.floor((cardW - 24 - labelW) / (13.5 * 0.54));
   const titleChars = Math.floor((cardW - 2 * inner) / (17 * 0.52));
   const paragraphs = [
     ['SYMPTOM', PAL.red, wrap(c.symptom, paraChars)],
     ['CAUSE', PAL.red, wrap(c.cause, paraChars)],
     ['FIX', PAL.green, wrap(c.fix, paraChars)],
   ];
-  const lesson = wrap(c.lesson, lessonChars);
+  const takeaway = wrap(c.takeaway, takeawayChars);
   const out = [`<rect x="${x}" y="${y0}" width="${cardW}" height="0" fill="#fff"/>`];
   let y = y0 + inner;
   const title = wrap(c.title, titleChars);
@@ -374,12 +374,12 @@ function card(mobile, W, x, y0, c) {
   }
   y += 6;
   const ly = y + 16;
-  const boxH = lesson.length * 19 + 14;
-  out.push(`<rect x="${x + 12}" y="${ly - 15}" width="${cardW - 24}" height="${boxH}" fill="${PAL.lessonBg}"/>`);
+  const boxH = takeaway.length * 19 + 14;
+  out.push(`<rect x="${x + 12}" y="${ly - 15}" width="${cardW - 24}" height="${boxH}" fill="${PAL.noteBg}"/>`);
   out.push(`<rect x="${x + 12}" y="${ly - 15}" width="3" height="${boxH}" fill="${PAL.ochre}"/>`);
-  out.push(T(x + 24, ly, 'LESSON', { family: 'mono', size: 9.5, fill: PAL.ochre, spacing: 1.2 }));
-  out.push(lines(x + 24 + labelW, ly, lesson, 19, { size: 13.5 }));
-  y = ly + (lesson.length - 1) * 19 + 15 + inner;
+  out.push(T(x + 24, ly, 'TAKEAWAY', { family: 'mono', size: 9.5, fill: PAL.ochre, spacing: 1.2 }));
+  out.push(lines(x + 24 + labelW, ly, takeaway, 19, { size: 13.5 }));
+  y = ly + (takeaway.length - 1) * 19 + 15 + inner;
   const height = y - y0;
   out[0] = `<rect x="${x}" y="${y0}" width="${cardW}" height="${height}" fill="#fff" stroke="${PAL.ink}" rx="3"/>`;
   return { svg: out.join(''), height };

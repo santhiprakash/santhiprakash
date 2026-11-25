@@ -13,7 +13,7 @@ followed by plain Markdown. The version before it lives on branch
 | 3 | Platform + code lanes | `assets/panel-lanes{,-m}.svg` | daily |
 | 4 | Coding agents | `assets/panel-agents{,-m}.svg` | daily |
 | 5 | Live per-project badges, three recent examples | `README.md` | badges live (shields.io); examples by hand |
-| 6 | Fixes, with the lesson | `assets/panel-cards{,-m}.svg` | when `data/profile.json` changes |
+| 6 | Notes to share | `assets/panel-cards{,-m}.svg` | when `data/profile.json` changes |
 | 7 | Channel, footer | `README.md` | by hand |
 
 Each panel is one desktop SVG (900 wide) and one mobile SVG (400 wide); the
@@ -49,7 +49,7 @@ with the list-pull-requests REST endpoint: it ignores `creator`.
 | `tagline`, `title` | Nameplate lines | one short sentence each |
 | `platform[]` | A lane: name, `state` (`on` / `off`), colour, `readings` (short lines), `events_by_month` | a lit lane needs evidence; record it in `evidence` |
 | `agents[]` | Tool, `role` (`daily driver` / `fleet`), reading | `{named_tool.X}` is filled from what PR bodies disclose |
-| `cards[]` | Symptom · cause · fix · lesson | anonymise clients; name the upstream PR in the title |
+| `cards[]` | Symptom · cause · fix · takeaway | anonymise clients; name the upstream PR in the title |
 
 Edit, run the workflow by hand (or `node scripts/build-panels.mjs`), commit.
 Blips in a platform trace drop out when the six-month window passes them — add

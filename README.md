@@ -3,7 +3,7 @@
   <img src="./assets/panel-nameplate-m.svg" alt="Santhi Prakash — Microsoft Certified Trainer. I run it, I fix it, I teach it. Live counts: fixes landed upstream, projects, merge rate, merges in the last 30 days." width="100%" />
 </picture>
 
-I run Azure operations for client tenants, land fixes in open-source projects people actually run, and teach both on the channel — build-first.
+I run Azure operations for client tenants, land fixes in open-source projects people actually run, and share what I learn on the channel — build-first.
 
 [santhiprakash.com](https://santhiprakash.com) · [LinkedIn](https://linkedin.com/in/santhiprakashb) · [YouTube](https://www.youtube.com/@santhiprakashb) · [connect@santhiprakash.com](mailto:connect@santhiprakash.com)
 
@@ -41,11 +41,11 @@ Merged into other people's projects, counted 25 Nov 2026.
 - [**Nim #26785**](https://github.com/nim-lang/Nim/pull/26785) — growing a seq or string under `--mm:refc` now runs with the GC disabled, so a finalizer can no longer overwrite the elements mid-growth. Merged 24 Nov 2026.
 - [**Salt #70810**](https://github.com/saltstack/salt/pull/70810) — the TCP publish server keeps TLS subscribers that present no client certificate when the master is configured for server-only TLS. Merged 24 Nov 2026.
 
-## Fixes, with the lesson
+## Notes to share
 
 <picture>
   <source media="(min-width: 768px)" srcset="./assets/panel-cards.svg" />
-  <img src="./assets/panel-cards-m.svg" alt="Two fixes with the lesson: an Azure VM locked out of RDP by brute force, and Nim #26785 on seq growth under refc." width="100%" />
+  <img src="./assets/panel-cards-m.svg" alt="Two notes to share: an Azure VM locked out of RDP by brute force, and Nim #26785 on seq growth under refc — what happened, why, what fixed it, and the takeaway." width="100%" />
 </picture>
 
 ## On the channel

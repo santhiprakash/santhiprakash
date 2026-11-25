@@ -42,14 +42,14 @@
       "symptom": "Client could not connect over RDP for a day. 18,353 failed logons in 24 hours from dozens of IPs; the local admin account locked every 10 minutes.",
       "cause": "Port 3389 open to the internet times a 10-attempt lockout policy. Not an Azure block: VM healthy, no control-plane changes.",
       "fix": "Read-only diagnosis from the guest event log, then an NSG allowlist the same day. Zero-trust tunnel access later.",
-      "lesson": "Brute force does not need to win to lock you out. Close the port first; hardening the password comes second."
+      "takeaway": "Brute force does not need to win to lock you out. Close the port first; hardening the password comes second."
     },
     {
       "title": "Nim #26785 · seq growth under refc",
       "symptom": "A repro that appended 1,005 elements ended with one.",
       "cause": "Growing a seq can run a GC cycle; its finalizers mutated the object while growth kept the payload pointer taken before the allocation.",
       "fix": "Payload-replacement allocations now run with the GC disabled. Merged 24 Nov 2026.",
-      "lesson": "If a growth path can trigger finalizers, the old payload pointer is stale the moment you allocate."
+      "takeaway": "If a growth path can trigger finalizers, the old payload pointer is stale the moment you allocate."
     }
   ]
 }
