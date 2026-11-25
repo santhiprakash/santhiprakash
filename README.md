@@ -1,6 +1,6 @@
 <picture>
   <source media="(min-width: 768px)" srcset="./assets/panel-nameplate.svg" />
-  <img src="./assets/panel-nameplate-m.svg" alt="Santhi Prakash — Microsoft Certified Trainer. I run it, I fix it, I teach it. Live counts: fixes landed upstream, projects, merge rate, merges in the last 30 days." width="100%" />
+  <img src="./assets/panel-nameplate-m.svg" alt="Santhi Prakash — Microsoft Certified Trainer. I run it, I fix it, I share what I learn. Live counts: fixes landed upstream, projects, merge rate, merges in the last 30 days." width="100%" />
 </picture>
 
 I run Azure operations for client tenants, land fixes in open-source projects people actually run, and share what I learn on the channel — build-first.
