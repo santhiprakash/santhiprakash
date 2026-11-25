@@ -35,18 +35,23 @@ Merged into other people's projects, counted 25 Nov 2026.
 | [**Beszel**](https://github.com/henrygd/beszel) | Lightweight server monitoring | [![merged](https://img.shields.io/github/issues-search/henrygd/beszel?query=is%3Apr+is%3Amerged+author%3Asanthiprakash&label=merged&color=C2974A)](https://github.com/henrygd/beszel/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) | [![submitted](https://img.shields.io/github/issues-search/henrygd/beszel?query=is%3Apr+author%3Asanthiprakash&label=submitted&color=14213D)](https://github.com/henrygd/beszel/pulls?q=is%3Apr+author%3Asanthiprakash) |
 | [**Prettier**](https://github.com/prettier/prettier) | Opinionated code formatting | [![merged](https://img.shields.io/github/issues-search/prettier/prettier?query=is%3Apr+is%3Amerged+author%3Asanthiprakash&label=merged&color=C2974A)](https://github.com/prettier/prettier/pulls?q=is%3Apr+is%3Amerged+author%3Asanthiprakash) | [![submitted](https://img.shields.io/github/issues-search/prettier/prettier?query=is%3Apr+author%3Asanthiprakash&label=submitted&color=14213D)](https://github.com/prettier/prettier/pulls?q=is%3Apr+author%3Asanthiprakash) |
 
-## Three recent examples
+## How I run it
 
-- [**Navidrome #6364**](https://github.com/navidrome/navidrome/pull/6364) — installing the RPM on an SELinux-enforcing distro no longer raises an AVC denial: the service home is created without copying `/etc/skel`. Merged 25 Nov 2026.
-- [**Nim #26785**](https://github.com/nim-lang/Nim/pull/26785) — growing a seq or string under `--mm:refc` now runs with the GC disabled, so a finalizer can no longer overwrite the elements mid-growth. Merged 24 Nov 2026.
-- [**Salt #70810**](https://github.com/saltstack/salt/pull/70810) — the TCP publish server keeps TLS subscribers that present no client certificate when the master is configured for server-only TLS. Merged 24 Nov 2026.
+The controls that matter, in the order that bites — and the finding that justified each one.
 
-## Notes to share
+<picture>
+  <source media="(min-width: 768px)" srcset="./assets/panel-controls.svg" />
+  <img src="./assets/panel-controls-m.svg" alt="How I run it: five controls with the finding behind each — patch cadence, accounts and lockout, nothing public without Cloudflare, backups that prune and restore, cost read every month." width="100%" />
+</picture>
+
+## Fixes, with the lesson
 
 <picture>
   <source media="(min-width: 768px)" srcset="./assets/panel-cards.svg" />
-  <img src="./assets/panel-cards-m.svg" alt="Two notes to share: an Azure VM locked out of RDP by brute force, and Nim #26785 on seq growth under refc — what happened, why, what fixed it, and the takeaway." width="100%" />
+  <img src="./assets/panel-cards-m.svg" alt="Two fixes with the lesson: Nim #26785 on seq growth under refc, and Salt #70810 on TLS subscribers dropped under server-only TLS." width="100%" />
 </picture>
+
+Latest merges: [Nim #26785](https://github.com/nim-lang/Nim/pull/26785) · [Salt #70810](https://github.com/saltstack/salt/pull/70810) · [Navidrome #6364](https://github.com/navidrome/navidrome/pull/6364)
 
 ## On the channel
 

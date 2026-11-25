@@ -7,49 +7,127 @@
       "name": "Azure",
       "state": "on",
       "color": "#B07C1E",
-      "readings": ["2 client tenants", "5 incident write-ups", "15 PowerShell runbooks"],
-      "events_by_month": { "2026-08": 1, "2026-09": 4, "2026-10": 1 },
+      "readings": [
+        "4 tenants managed",
+        "5 incident write-ups",
+        "15 PowerShell runbooks"
+      ],
+      "events_by_month": {
+        "2026-08": 1,
+        "2026-09": 4,
+        "2026-10": 1
+      },
       "evidence": "mysoftind-ops: write-ups dated 2026-08-29 (audit), 09-24 (RDP), 09-27 (cost), 09-28 (NSG allowlist), 09-28 (backup cleanup), 10-14 (re-exposure check); vm-scripts/*.ps1 = 15. Blips fall out of the trace when the six-month window passes them."
     },
     {
       "name": "Microsoft 365",
       "state": "on",
       "color": "#35618E",
-      "readings": ["1 tenant · mail flow kept intact", "while adding a sending subdomain"],
+      "readings": [
+        "6+ tenants managed",
+        "M365 support",
+        "SharePoint Online migrations"
+      ],
       "events_by_month": {},
-      "evidence": "minervainfo-ops: MX → Microsoft 365 on the root domain, SPF/DMARC work around Mailmatic. Nothing on Entra, Intune, Teams yet."
+      "evidence": "Stated by Prakash 2026-11-25: 6+ M365 tenants managed, M365 support, SharePoint. Docs: ~/Projects/m365 — SNA Tax tenant migration complete and verified (mail, SharePoint, OneDrive, domain cutover); MVSS tenant-to-tenant migration in flight on 1 Aug (confirm outcome). Bucket 2 client: keep anonymised."
     },
     {
       "name": "AWS",
       "state": "off",
       "color": "#B5402C",
-      "readings": ["no readings recorded yet"],
+      "readings": [
+        "no readings recorded yet"
+      ],
       "events_by_month": {},
       "evidence": "No hands-on AWS work found in the workspace on 2026-11-25. Fill in or remove."
     }
   ],
   "agents": [
-    { "name": "Claude Code", "role": "daily driver", "reading": ["no per-PR attribution on GitHub"] },
-    { "name": "Codex CLI", "role": "daily driver", "reading": ["no per-PR attribution on GitHub"] },
-    { "name": "Cursor", "role": "daily driver", "reading": ["{named_tool.Cursor} upstream PRs carry its marker"] },
-    { "name": "pi", "role": "fleet", "reading": ["orchestration · this profile session"] },
-    { "name": "Devin", "role": "fleet", "reading": ["{named_tool.Devin} upstream PR"] },
-    { "name": "Grok CLI", "role": "fleet", "reading": ["{named_tool.Grok} upstream PRs"] }
+    {
+      "name": "Claude Code",
+      "role": "daily driver",
+      "reading": [
+        "no per-PR attribution on GitHub"
+      ]
+    },
+    {
+      "name": "Codex CLI",
+      "role": "daily driver",
+      "reading": [
+        "no per-PR attribution on GitHub"
+      ]
+    },
+    {
+      "name": "Cursor",
+      "role": "daily driver",
+      "reading": [
+        "{named_tool.Cursor} upstream PRs carry its marker"
+      ]
+    },
+    {
+      "name": "pi",
+      "role": "fleet",
+      "reading": [
+        "orchestration · this profile session"
+      ]
+    },
+    {
+      "name": "Devin",
+      "role": "fleet",
+      "reading": [
+        "{named_tool.Devin} upstream PR"
+      ]
+    },
+    {
+      "name": "Grok CLI",
+      "role": "fleet",
+      "reading": [
+        "{named_tool.Grok} upstream PRs"
+      ]
+    }
   ],
   "cards": [
-    {
-      "title": "Production VM · admin locked out of RDP",
-      "symptom": "Client could not connect over RDP for a day. 18,353 failed logons in 24 hours from dozens of IPs; the local admin account locked every 10 minutes.",
-      "cause": "Port 3389 open to the internet times a 10-attempt lockout policy. Not an Azure block: VM healthy, no control-plane changes.",
-      "fix": "Read-only diagnosis from the guest event log, then an NSG allowlist the same day. Zero-trust tunnel access later.",
-      "takeaway": "Brute force does not need to win to lock you out. Close the port first; hardening the password comes second."
-    },
     {
       "title": "Nim #26785 · seq growth under refc",
       "symptom": "A repro that appended 1,005 elements ended with one.",
       "cause": "Growing a seq can run a GC cycle; its finalizers mutated the object while growth kept the payload pointer taken before the allocation.",
       "fix": "Payload-replacement allocations now run with the GC disabled. Merged 24 Nov 2026.",
-      "takeaway": "If a growth path can trigger finalizers, the old payload pointer is stale the moment you allocate."
+      "lesson": "If a growth path can trigger finalizers, the old payload pointer is stale the moment you allocate."
+    },
+    {
+      "title": "Salt #70810 · TLS subscribers dropped under server-only TLS",
+      "symptom": "After the master is set to server-only TLS, minions never receive a publish and every job times out.",
+      "cause": "getpeercert() comes back empty whenever the peer sends no certificate, whatever the verify mode; the guard closed the stream on that alone.",
+      "fix": "The guard now consults the context's verify mode before closing. Merged 24 Nov 2026.",
+      "lesson": "A missing certificate is not a rejected one. Read the policy before you close the socket."
     }
-  ]
+  ],
+  "controls": [
+    {
+      "name": "Patch cadence",
+      "evidence": "Weekly scan and install, reboot only on a trigger; September and October CUs across five hosts.",
+      "found": "a host with three hotfixes, all from 2021 — unpatched for 19 months."
+    },
+    {
+      "name": "Accounts and lockout",
+      "evidence": "No default Administrator: per-person admins, lockout at 5 attempts / 15 min, rotated secrets, MFA on remote access.",
+      "found": "Administrator with no lockout, no MFA, 25,000+ password guesses."
+    },
+    {
+      "name": "Nothing public without Cloudflare",
+      "evidence": "Site proxied; RDP through Cloudflare Tunnel + Access with no inbound port.",
+      "found": "RDP, FTP, SMB and WinRM open to the internet."
+    },
+    {
+      "name": "Backups that prune and restore",
+      "evidence": "62 snapshots reduced to 9; 15 GB moved and verified file by file; nightly database dumps since 28 Sep.",
+      "found": "a backup share nobody had pruned since May 2025."
+    },
+    {
+      "name": "Cost read every month",
+      "evidence": "The September invoice reconciled line by line; the storage line explained, not just paid.",
+      "found": "orphaned snapshots holding the cost flat day after day."
+    }
+  ],
+  "controls_evidence": "minervainfo-cmsaudit FINDINGS.md / FLEET-PATCH-MAINTENANCE-PLAN.md / TONIGHT-SECURITY-CHECKLIST.md; mysoftind-ops write-ups (RDP-INCIDENT, NSG-RDP-WHITELIST, BACKUP-SNAPSHOT-CLEANUP, CLOUDFLARE-TUNNEL, DEVOPS.md line 28). Cloudflare RDP: tunnel healthy 14 Oct, operator test pending, 3389 kept open until browser-RDP proven — confirm."
 }

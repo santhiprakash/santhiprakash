@@ -30,7 +30,7 @@ const PAL = {
   red: '#B5402C',
   green: '#2E6B4A',
   ochre: '#B07C1E',
-  noteBg: '#F3EFE4',
+  lessonBg: '#F3EFE4',
 };
 const TRACE = ['#B5402C', '#2E6B4A', '#35618E', '#6E3A5D', '#B07C1E', '#5C7A3A'];
 const SANS = 'Schibsted Grotesk';
@@ -352,14 +352,14 @@ function card(mobile, W, x, y0, c) {
   const inner = 16;
   const labelW = 66;
   const paraChars = Math.floor((cardW - 2 * inner - labelW - 8) / (13.5 * 0.54));
-  const takeawayChars = Math.floor((cardW - 24 - labelW) / (13.5 * 0.54));
+  const lessonChars = Math.floor((cardW - 24 - labelW) / (13.5 * 0.54));
   const titleChars = Math.floor((cardW - 2 * inner) / (17 * 0.52));
   const paragraphs = [
     ['SYMPTOM', PAL.red, wrap(c.symptom, paraChars)],
     ['CAUSE', PAL.red, wrap(c.cause, paraChars)],
     ['FIX', PAL.green, wrap(c.fix, paraChars)],
   ];
-  const takeaway = wrap(c.takeaway, takeawayChars);
+  const lesson = wrap(c.lesson, lessonChars);
   const out = [`<rect x="${x}" y="${y0}" width="${cardW}" height="0" fill="#fff"/>`];
   let y = y0 + inner;
   const title = wrap(c.title, titleChars);
@@ -374,12 +374,12 @@ function card(mobile, W, x, y0, c) {
   }
   y += 6;
   const ly = y + 16;
-  const boxH = takeaway.length * 19 + 14;
-  out.push(`<rect x="${x + 12}" y="${ly - 15}" width="${cardW - 24}" height="${boxH}" fill="${PAL.noteBg}"/>`);
+  const boxH = lesson.length * 19 + 14;
+  out.push(`<rect x="${x + 12}" y="${ly - 15}" width="${cardW - 24}" height="${boxH}" fill="${PAL.lessonBg}"/>`);
   out.push(`<rect x="${x + 12}" y="${ly - 15}" width="3" height="${boxH}" fill="${PAL.ochre}"/>`);
-  out.push(T(x + 24, ly, 'TAKEAWAY', { family: 'mono', size: 9.5, fill: PAL.ochre, spacing: 1.2 }));
-  out.push(lines(x + 24 + labelW, ly, takeaway, 19, { size: 13.5 }));
-  y = ly + (takeaway.length - 1) * 19 + 15 + inner;
+  out.push(T(x + 24, ly, 'LESSON', { family: 'mono', size: 9.5, fill: PAL.ochre, spacing: 1.2 }));
+  out.push(lines(x + 24 + labelW, ly, lesson, 19, { size: 13.5 }));
+  y = ly + (lesson.length - 1) * 19 + 15 + inner;
   const height = y - y0;
   out[0] = `<rect x="${x}" y="${y0}" width="${cardW}" height="${height}" fill="#fff" stroke="${PAL.ink}" rx="3"/>`;
   return { svg: out.join(''), height };
@@ -405,9 +405,52 @@ function cards(mobile) {
   return frame(W, height + 2 * P, rendered.map((r) => r.svg).join(''), faceKeys);
 }
 
+// ---------- panel: controls ----------
+/** "How I run it": each control on the left, the evidence on the right, and the finding that justifies it in red. */
+function controls(mobile) {
+  const W = mobile ? 400 : 900;
+  const P = mobile ? 20 : 24;
+  const out = [];
+  let y = mobile ? 34 : 38;
+  out.push(header(P, y, 'How I run it · the order that bites', mobile));
+  y += mobile ? 18 : 14;
+  profile.controls.forEach((c, i) => {
+    const num = String(i + 1).padStart(2, '0');
+    if (!mobile) {
+      const chars = Math.floor(546 / (13.5 * 0.54));
+      const evidence = wrap(c.evidence, chars);
+      const found = c.found ? wrap(`Found: ${c.found}`, chars) : [];
+      const rowH = Math.max(44, (evidence.length + found.length) * 19 + 14);
+      out.push(T(P, y + 25, num, { family: 'mono', size: 14, weight: 500, fill: PAL.ochre }));
+      out.push(lines(P + 40, y + 25, wrap(c.name, 26), 19, { size: 15, weight: 700 }));
+      out.push(lines(330, y + 22, evidence, 19, { size: 13.5 }));
+      out.push(lines(330, y + 22 + evidence.length * 19, found, 19, { size: 13.5, fill: PAL.red }));
+      out.push(hline(P, W - P, y + rowH - 6, PAL.gridBold));
+      y += rowH;
+      return;
+    }
+    const chars = Math.floor(340 / (13 * 0.54));
+    const name = wrap(c.name, 40);
+    out.push(T(P, y + 15, num, { family: 'mono', size: 13, weight: 500, fill: PAL.ochre }));
+    out.push(lines(P + 30, y + 15, name, 19, { size: 14, weight: 700 }));
+    y += name.length * 19 + 4;
+    const evidence = wrap(c.evidence, chars);
+    out.push(lines(P, y + 14, evidence, 18, { size: 13 }));
+    y += evidence.length * 18;
+    if (c.found) {
+      const found = wrap(`Found: ${c.found}`, chars);
+      out.push(lines(P, y + 14, found, 18, { size: 13, fill: PAL.red }));
+      y += found.length * 18;
+    }
+    y += 12;
+    out.push(hline(P, W - P, y - 4, PAL.gridBold));
+  });
+  return frame(W, y + P - 6, out.join(''), ['sans400', 'sans700', 'mono400', 'mono500']);
+}
+
 // ---------- main ----------
 console.log(`fonts: sans=${available.sans} mono=${available.mono}`);
-for (const [name, build] of Object.entries({ nameplate, lanes, agents, cards })) {
+for (const [name, build] of Object.entries({ nameplate, lanes, agents, controls, cards })) {
   for (const mobile of [false, true]) {
     const file = join(ASSETS, `panel-${name}${mobile ? '-m' : ''}.svg`);
     const svg = build(mobile);
