@@ -1,12 +1,13 @@
 #!/usr/bin/env node
 /**
  * Recomputes the "N fixes landed upstream" headline in README.md and writes
- * data/upstream-stats.json. Runs daily from .github/workflows/upstream-count.yml
- * and can be run by hand: GH_TOKEN=<token> node scripts/upstream-count.mjs
+ * data/upstream-stats.json — the numbers the panels and badges read.
+ * Runs daily from .github/workflows/upstream-count.yml, or by hand:
+ *   GH_TOKEN=<token> node scripts/upstream-count.mjs
  *
- * Source is the GitHub search index — the same source the shields.io badges in
- * README.md read. The list-pull-requests REST endpoint is not usable here: it
- * silently ignores `creator=`. Definition and exclusions: MAINTAINING.md.
+ * Source is the GitHub search index — the same source as the shields.io badges in
+ * README.md. The list-pull-requests REST endpoint is not usable here: it silently
+ * ignores `creator=`. Definition and exclusions: MAINTAINING.md.
  */
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
@@ -16,6 +17,7 @@ const LOGIN = 'santhiprakash';
 /** Repositories owned by these accounts are not "other people's projects". */
 const EXCLUDED_OWNERS = ['santhiprakash', 'minervainfo', 'minervainfoedtech', 'santhiprakashb'];
 const MONTHS_KEPT = 6;
+const LANGUAGES_KEPT = 6;
 const TOP_REPOS_KEPT = 10;
 const LATEST_KEPT = 3;
 const MAX_ATTEMPTS = 4;
@@ -39,25 +41,37 @@ const NAMED_TOOL_PATTERNS = [
   ['Devin', /\*\*AI:\*\*[^\n]*Devin/i],
 ];
 
+const PR_FIELDS = 'number title url closedAt body repository { nameWithOwner primaryLanguage { name } }';
+
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const round1 = (value) => Math.round(value * 10) / 10;
-const repoOf = (item) => item.repository_url.split('/repos/')[1];
-const ownerOf = (item) => repoOf(item).split('/')[0];
-const isUpstream = (item) => !EXCLUDED_OWNERS.includes(ownerOf(item));
+const repoOf = (pr) => pr.repository.nameWithOwner;
+const ownerOf = (pr) => repoOf(pr).split('/')[0];
+const isUpstream = (pr) => !EXCLUDED_OWNERS.includes(ownerOf(pr));
+const monthKey = (iso) => iso.slice(0, 7);
 
-async function githubJson(path, query = {}) {
-  const url = new URL(`https://api.github.com${path}`);
-  for (const [key, value] of Object.entries(query)) url.searchParams.set(key, value);
+/** The last MONTHS_KEPT calendar months, oldest first, as YYYY-MM. */
+function recentMonths(now = new Date()) {
+  const months = [];
+  for (let i = MONTHS_KEPT - 1; i >= 0; i -= 1) {
+    const date = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth() - i, 1));
+    months.push(date.toISOString().slice(0, 7));
+  }
+  return months;
+}
 
+async function githubGraphql(query, variables = {}) {
   for (let attempt = 0; ; attempt += 1) {
     let response;
     try {
-      response = await fetch(url, {
+      response = await fetch('https://api.github.com/graphql', {
+        method: 'POST',
         headers: {
-          accept: 'application/vnd.github+json',
           authorization: `Bearer ${TOKEN}`,
           'user-agent': 'upstream-count',
+          'content-type': 'application/json',
         },
+        body: JSON.stringify({ query, variables }),
         signal: AbortSignal.timeout(30_000),
       });
     } catch (error) {
@@ -66,7 +80,7 @@ async function githubJson(path, query = {}) {
       continue;
     }
 
-    // 403/429: either the hourly search window (x-ratelimit-reset) or a secondary limit (retry-after).
+    // 403/429: the hourly window (x-ratelimit-reset) or a secondary limit (retry-after).
     if (response.status === 403 || response.status === 429) {
       const resetAt = Number(response.headers.get('x-ratelimit-reset')) * 1000;
       const retryAfter = Number(response.headers.get('retry-after'));
@@ -81,61 +95,84 @@ async function githubJson(path, query = {}) {
       await sleep(Math.max(waitMs, 1_000));
       continue;
     }
+    if (response.status >= 500) {
+      if (attempt >= MAX_ATTEMPTS) throw new Error(`GitHub ${response.status}`);
+      await sleep(2_000 * 2 ** attempt);
+      continue;
+    }
+    if (!response.ok) throw new Error(`GitHub ${response.status}`);
 
-    if (!response.ok) throw new Error(`GitHub ${response.status} for ${url.pathname}${url.search}`);
-    return response.json();
+    const payload = await response.json();
+    const errors = (payload.errors ?? []).map((error) => error.message).join('; ');
+    if (errors) {
+      if (/rate limit/i.test(errors) && attempt < MAX_ATTEMPTS) {
+        await sleep(60_000);
+        continue;
+      }
+      throw new Error(errors);
+    }
+    return payload.data;
   }
 }
 
-const searchCount = async (query) => {
-  const result = await githubJson('/search/issues', { q: query, per_page: 1 });
-  await sleep(1_500);
-  return result.total_count;
-};
+async function searchCount(query) {
+  const data = await githubGraphql('query($q: String!) { search(query: $q, type: ISSUE, first: 1) { issueCount } }', { q: query });
+  return data.search.issueCount;
+}
 
-async function searchAll(query) {
-  const items = [];
-  for (let page = 1; ; page += 1) {
-    const result = await githubJson('/search/issues', {
-      q: query,
-      per_page: 100,
-      page,
-      sort: 'created',
-      order: 'asc',
-    });
-    items.push(...result.items);
-    await sleep(1_500);
-    if (result.items.length === 0 || items.length >= result.total_count) return items;
+async function searchPullRequests(query) {
+  const found = [];
+  let after = null;
+  for (;;) {
+    const data = await githubGraphql(
+      `query($q: String!, $after: String) {
+         search(query: $q, type: ISSUE, first: 100, after: $after) {
+           pageInfo { hasNextPage endCursor }
+           nodes { ... on PullRequest { ${PR_FIELDS} } }
+         }
+       }`,
+      { q: query, after },
+    );
+    found.push(...data.search.nodes);
+    if (!data.search.pageInfo.hasNextPage) return found;
+    after = data.search.pageInfo.endCursor;
   }
 }
 
 async function collectStats() {
   const excluded = EXCLUDED_OWNERS.map((owner) => `-user:${owner}`).join(' ');
-  const merged = await searchAll(`author:${LOGIN} is:pr is:merged`);
+  const months = recentMonths();
+  const monthIndex = new Map(months.map((month, i) => [month, i]));
+
+  const merged = await searchPullRequests(`author:${LOGIN} is:pr is:merged`);
   const upstream = merged.filter(isUpstream);
   const submitted = await searchCount(`author:${LOGIN} is:pr ${excluded}`);
   const open = await searchCount(`author:${LOGIN} is:pr is:open ${excluded}`);
 
   const now = Date.now();
-  const perMonth = new Map();
+  const byMonth = months.map(() => 0);
   const perRepo = new Map();
+  const perLanguage = new Map();
   let last30Days = 0;
-  for (const item of upstream) {
-    const month = item.closed_at.slice(0, 7);
-    const repo = repoOf(item);
-    perMonth.set(month, (perMonth.get(month) ?? 0) + 1);
+  for (const pr of upstream) {
+    const slot = monthIndex.get(monthKey(pr.closedAt));
+    const repo = repoOf(pr);
+    const language = pr.repository.primaryLanguage?.name ?? 'Other';
+    if (slot !== undefined) byMonth[slot] += 1;
     perRepo.set(repo, (perRepo.get(repo) ?? 0) + 1);
-    if (Date.parse(item.closed_at) >= now - 30 * DAY_MS) last30Days += 1;
+    const perLang = perLanguage.get(language) ?? { merged: 0, byMonth: months.map(() => 0) };
+    perLang.merged += 1;
+    if (slot !== undefined) perLang.byMonth[slot] += 1;
+    perLanguage.set(language, perLang);
+    if (Date.parse(pr.closedAt) >= now - 30 * DAY_MS) last30Days += 1;
   }
 
-  const byRank = (a, b) => b[1] - a[1] || a[0].localeCompare(b[0]);
-  const bodies = upstream.map((item) => item.body ?? '');
-
+  // Counts cover public upstream pull requests only: that is all a visitor can
+  // see, and all the workflow's GITHUB_TOKEN can see (no private-repo access).
+  const bodies = upstream.map((pr) => pr.body ?? '');
   return {
     login: LOGIN,
     excluded_owners: EXCLUDED_OWNERS,
-    // Counts cover public upstream pull requests only: that is all a visitor can
-    // see, and all the workflow's GITHUB_TOKEN can see (no private-repo access).
     upstream: {
       merged: upstream.length,
       repos: perRepo.size,
@@ -143,24 +180,20 @@ async function collectStats() {
       open,
       merge_rate_pct: submitted ? round1((100 * upstream.length) / submitted) : null,
       last_30_days: last30Days,
-      by_month: [...perMonth]
-        .sort((a, b) => a[0].localeCompare(b[0]))
-        .slice(-MONTHS_KEPT)
-        .map(([month, merged]) => ({ month, merged })),
+      months,
+      by_month: months.map((month, i) => ({ month, merged: byMonth[i] })),
+      by_language: [...perLanguage]
+        .sort((a, b) => b[1].merged - a[1].merged || a[0].localeCompare(b[0]))
+        .slice(0, LANGUAGES_KEPT)
+        .map(([language, { merged: count, byMonth: series }]) => ({ language, merged: count, by_month: series })),
       top_repos: [...perRepo]
-        .sort(byRank)
+        .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
         .slice(0, TOP_REPOS_KEPT)
-        .map(([repo, merged]) => ({ repo, merged })),
+        .map(([repo, count]) => ({ repo, merged: count })),
       latest: upstream
-        .toSorted((a, b) => b.closed_at.localeCompare(a.closed_at))
+        .toSorted((a, b) => b.closedAt.localeCompare(a.closedAt))
         .slice(0, LATEST_KEPT)
-        .map((item) => ({
-          repo: repoOf(item),
-          number: item.number,
-          title: item.title,
-          url: item.html_url,
-          merged_at: item.closed_at.slice(0, 10),
-        })),
+        .map((pr) => ({ repo: repoOf(pr), number: pr.number, title: pr.title, url: pr.url, merged_at: pr.closedAt.slice(0, 10) })),
     },
     ai_disclosure: {
       states_assistance: bodies.filter((body) => AI_STATEMENT_PATTERN.test(body)).length,

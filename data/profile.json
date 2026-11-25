@@ -1,0 +1,55 @@
+{
+  "name": "Santhi Prakash",
+  "title": "Microsoft Certified Trainer",
+  "tagline": "I run it, I fix it, I share what I learn.",
+  "platform": [
+    {
+      "name": "Azure",
+      "state": "on",
+      "color": "#B07C1E",
+      "readings": ["2 client tenants", "5 incident write-ups", "15 PowerShell runbooks"],
+      "events_by_month": { "2026-08": 1, "2026-09": 4, "2026-10": 1 },
+      "evidence": "mysoftind-ops: write-ups dated 2026-08-29 (audit), 09-24 (RDP), 09-27 (cost), 09-28 (NSG allowlist), 09-28 (backup cleanup), 10-14 (re-exposure check); vm-scripts/*.ps1 = 15. Blips fall out of the trace when the six-month window passes them."
+    },
+    {
+      "name": "Microsoft 365",
+      "state": "on",
+      "color": "#35618E",
+      "readings": ["1 tenant · mail flow kept intact", "while adding a sending subdomain"],
+      "events_by_month": {},
+      "evidence": "minervainfo-ops: MX → Microsoft 365 on the root domain, SPF/DMARC work around Mailmatic. Nothing on Entra, Intune, Teams yet."
+    },
+    {
+      "name": "AWS",
+      "state": "off",
+      "color": "#B5402C",
+      "readings": ["no readings recorded yet"],
+      "events_by_month": {},
+      "evidence": "No hands-on AWS work found in the workspace on 2026-11-25. Fill in or remove."
+    }
+  ],
+  "agents": [
+    { "name": "Claude Code", "role": "daily driver", "reading": ["no per-PR attribution on GitHub"] },
+    { "name": "Codex CLI", "role": "daily driver", "reading": ["no per-PR attribution on GitHub"] },
+    { "name": "Cursor", "role": "daily driver", "reading": ["{named_tool.Cursor} upstream PRs carry its marker"] },
+    { "name": "pi", "role": "fleet", "reading": ["orchestration · this profile session"] },
+    { "name": "Devin", "role": "fleet", "reading": ["{named_tool.Devin} upstream PR"] },
+    { "name": "Grok CLI", "role": "fleet", "reading": ["{named_tool.Grok} upstream PRs"] }
+  ],
+  "cards": [
+    {
+      "title": "Production VM · admin locked out of RDP",
+      "symptom": "Client could not connect over RDP for a day. 18,353 failed logons in 24 hours from dozens of IPs; the local admin account locked every 10 minutes.",
+      "cause": "Port 3389 open to the internet times a 10-attempt lockout policy. Not an Azure block: VM healthy, no control-plane changes.",
+      "fix": "Read-only diagnosis from the guest event log, then an NSG allowlist the same day. Zero-trust tunnel access later.",
+      "takeaway": "Brute force does not need to win to lock you out. Close the port first; hardening the password comes second."
+    },
+    {
+      "title": "Nim #26785 · seq growth under refc",
+      "symptom": "A repro that appended 1,005 elements ended with one.",
+      "cause": "Growing a seq can run a GC cycle; its finalizers mutated the object while growth kept the payload pointer taken before the allocation.",
+      "fix": "Payload-replacement allocations now run with the GC disabled. Merged 24 Nov 2026.",
+      "takeaway": "If a growth path can trigger finalizers, the old payload pointer is stale the moment you allocate."
+    }
+  ]
+}

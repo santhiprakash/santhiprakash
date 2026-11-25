@@ -1,7 +1,8 @@
 name: Upstream count
 
-# Recomputes "N fixes landed upstream" in README.md and data/upstream-stats.json.
-# Definition and exclusions: MAINTAINING.md. Run by hand from the Actions tab.
+# Recomputes "N fixes landed upstream" in README.md, writes data/upstream-stats.json
+# and re-renders the SVG panels in assets/ from it. Definition and exclusions: MAINTAINING.md.
+# Run by hand from the Actions tab.
 
 on:
   schedule:
@@ -30,6 +31,9 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/upstream-count.mjs
 
+      - name: Rebuild panels
+        run: node scripts/build-panels.mjs
+
       - name: Commit if anything changed
         run: |
           if git diff --quiet; then
@@ -42,7 +46,7 @@ jobs:
             fi
             message='chore: keepalive for the scheduled upstream count'
           elif git diff --quiet -- README.md; then
-            message='chore: refresh upstream stats'
+            message='chore: refresh upstream stats and panels'
           else
             message='docs: refresh the upstream pull request count'
           fi
