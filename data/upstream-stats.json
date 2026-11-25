@@ -13,7 +13,19 @@
     "open": 56,
     "merge_rate_pct": 39.2,
     "last_30_days": 66,
+    "months": [
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10",
+      "2026-11"
+    ],
     "by_month": [
+      {
+        "month": "2026-06",
+        "merged": 0
+      },
       {
         "month": "2026-07",
         "merged": 52
@@ -33,6 +45,80 @@
       {
         "month": "2026-11",
         "merged": 57
+      }
+    ],
+    "by_language": [
+      {
+        "language": "TypeScript",
+        "merged": 162,
+        "by_month": [
+          0,
+          40,
+          44,
+          33,
+          27,
+          18
+        ]
+      },
+      {
+        "language": "Go",
+        "merged": 33,
+        "by_month": [
+          0,
+          0,
+          0,
+          6,
+          10,
+          17
+        ]
+      },
+      {
+        "language": "Python",
+        "merged": 20,
+        "by_month": [
+          0,
+          7,
+          5,
+          1,
+          3,
+          4
+        ]
+      },
+      {
+        "language": "JavaScript",
+        "merged": 19,
+        "by_month": [
+          0,
+          3,
+          5,
+          5,
+          3,
+          3
+        ]
+      },
+      {
+        "language": "Nim",
+        "merged": 7,
+        "by_month": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          6
+        ]
+      },
+      {
+        "language": "Kotlin",
+        "merged": 6,
+        "by_month": [
+          0,
+          0,
+          0,
+          5,
+          1,
+          0
+        ]
       }
     ],
     "top_repos": [

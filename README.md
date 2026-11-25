@@ -1,17 +1,25 @@
-<p align="center">
-  <picture>
-    <source media="(min-width: 768px)" srcset="./assets/profile-header.png" />
-    <img src="./assets/profile-header-mobile.png" alt="Santhi Prakash — Microsoft Certified Trainer. I land the fix. Then I teach it." width="100%" />
-  </picture>
-</p>
+<picture>
+  <source media="(min-width: 768px)" srcset="./assets/panel-nameplate.svg" />
+  <img src="./assets/panel-nameplate-m.svg" alt="Santhi Prakash — Microsoft Certified Trainer. I run it, I fix it, I teach it. Live counts: fixes landed upstream, projects, merge rate, merges in the last 30 days." width="100%" />
+</picture>
 
-I land production fixes in tools people actually run — then I teach the lesson. Microsoft Certified Trainer. TypeScript, Python, Azure, Postgres, LLMs.
+I run Azure operations for client tenants, land fixes in open-source projects people actually run, and teach both on the channel — build-first.
 
 [santhiprakash.com](https://santhiprakash.com) · [LinkedIn](https://linkedin.com/in/santhiprakashb) · [YouTube](https://www.youtube.com/@santhiprakashb) · [connect@santhiprakash.com](mailto:connect@santhiprakash.com)
 
 ## 266 fixes landed upstream
 
 Merged into other people's projects, counted 25 Nov 2026.
+
+<picture>
+  <source media="(min-width: 768px)" srcset="./assets/panel-lanes.svg" />
+  <img src="./assets/panel-lanes-m.svg" alt="Six-month traces: platform work items for Azure, Microsoft 365 and AWS, and upstream merges per programming language." width="100%" />
+</picture>
+
+<picture>
+  <source media="(min-width: 768px)" srcset="./assets/panel-agents.svg" />
+  <img src="./assets/panel-agents-m.svg" alt="Coding agents operated: Claude Code, Codex CLI, Cursor, pi, Devin and Grok CLI, with what GitHub can attribute and how many upstream merges state AI assistance." width="100%" />
+</picture>
 
 | Project | Contribution areas | Merged | Submitted |
 |:--|:--|:--:|:--:|
@@ -30,6 +38,13 @@ Merged into other people's projects, counted 25 Nov 2026.
 - [**Navidrome #6364**](https://github.com/navidrome/navidrome/pull/6364) — installing the RPM on an SELinux-enforcing distro no longer raises an AVC denial: the service home is created without copying `/etc/skel`. Merged 25 Nov 2026.
 - [**Nim #26785**](https://github.com/nim-lang/Nim/pull/26785) — growing a seq or string under `--mm:refc` now runs with the GC disabled, so a finalizer can no longer overwrite the elements mid-growth. Merged 24 Nov 2026.
 - [**Salt #70810**](https://github.com/saltstack/salt/pull/70810) — the TCP publish server keeps TLS subscribers that present no client certificate when the master is configured for server-only TLS. Merged 24 Nov 2026.
+
+## Fixes, with the lesson
+
+<picture>
+  <source media="(min-width: 768px)" srcset="./assets/panel-cards.svg" />
+  <img src="./assets/panel-cards-m.svg" alt="Two fixes with the lesson: an Azure VM locked out of RDP by brute force, and Nim #26785 on seq growth under refc." width="100%" />
+</picture>
 
 ## On the channel
 
