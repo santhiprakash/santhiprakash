@@ -7,11 +7,11 @@
     "santhiprakashb"
   ],
   "upstream": {
-    "merged": 271,
+    "merged": 272,
     "repos": 49,
-    "submitted": 685,
-    "open": 56,
-    "merge_rate_pct": 39.6,
+    "submitted": 686,
+    "open": 55,
+    "merge_rate_pct": 39.7,
     "last_30_days": 70,
     "months": [
       "2026-06",
@@ -44,20 +44,20 @@
       },
       {
         "month": "2026-11",
-        "merged": 62
+        "merged": 63
       }
     ],
     "by_language": [
       {
         "language": "TypeScript",
-        "merged": 164,
+        "merged": 165,
         "by_month": [
           0,
           40,
           44,
           33,
           27,
-          20
+          21
         ]
       },
       {
@@ -128,7 +128,7 @@
       },
       {
         "repo": "reactive-resume/reactive-resume",
-        "merged": 30
+        "merged": 31
       },
       {
         "repo": "remotion-dev/remotion",
@@ -165,6 +165,13 @@
     ],
     "latest": [
       {
+        "repo": "reactive-resume/reactive-resume",
+        "number": 4011,
+        "title": "fix(pdf): keep inline skill names on one line and share the row baseline",
+        "url": "https://github.com/reactive-resume/reactive-resume/pull/4011",
+        "merged_at": "2026-11-27"
+      },
+      {
         "repo": "marketcalls/openalgo",
         "number": 2509,
         "title": "fix(dhan): stop the websocket parser spinning on a sub-header packet length",
@@ -177,13 +184,6 @@
         "title": "fix(prompt): keep the phone section out of the stable prompt half",
         "url": "https://github.com/milind-soni/OpenMausBot/pull/7445",
         "merged_at": "2026-11-26"
-      },
-      {
-        "repo": "Emanuele-web04/synara",
-        "number": 2302,
-        "title": "fix(claude-import): match queued-command provenance by source_uuid",
-        "url": "https://github.com/Emanuele-web04/synara/pull/2302",
-        "merged_at": "2026-11-25"
       }
     ]
   },
